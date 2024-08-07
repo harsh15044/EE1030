@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  7 AUG 2024 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  7 AUG 2024 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1514,16 +1514,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--140
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
-[1{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/pdftex/up
-dmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts
-/enc/dvips/base/8r.enc}
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
 
 
-] (./main.aux)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/pdftex/u
+pdmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/font
+s/enc/dvips/base/8r.enc}
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 191--198
+[]\OT1/txr/m/n/12 Which of the fol-low-ing val-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--198
+\OT1/txr/m/n/12 ues of $\OML/txmi/m/it/12 $ \OT1/txr/m/n/12 sat-isfy the equa-
+tion
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Excluding 'comment' comment. [2] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1532,25 +1555,27 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30345 strings out of 474116
- 607312 string characters out of 5732613
- 1964187 words of memory out of 5000000
- 52015 multiletter control sequences out of 15000+600000
- 612592 words of font info for 145 fonts, out of 8000000 for 9000
+ 30393 strings out of 474116
+ 607690 string characters out of 5732613
+ 1965187 words of memory out of 5000000
+ 52018 multiletter control sequences out of 15000+600000
+ 615284 words of font info for 149 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,8n,103p,1172b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,8n,103p,1172b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/
 txfonts/rtxmi.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fon
 ts/type1/public/txfonts/rtxr.pfb></opt/homebrew/Cellar/texlive/20240312_1/share
 /texmf-dist/fonts/type1/public/txfonts/txex.pfb></opt/homebrew/Cellar/texlive/2
 0240312_1/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></opt/homebrew/C
-ellar/texlive/20240312_1/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></op
-t/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on main.pdf (1 page, 43880 bytes).
+ellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb>
+</opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/tx
+fonts/txsyc.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texm
+f-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (2 pages, 56852 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 40 named destinations out of 1000 (max. 500000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 81 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
