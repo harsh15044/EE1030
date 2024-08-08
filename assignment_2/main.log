@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  8 AUG 2024 11:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  8 AUG 2024 23:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1499,6 +1499,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--95
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
@@ -1532,6 +1537,21 @@ s/enc/dvips/base/8r.enc}
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 191--198
 []\OT1/txr/m/n/12 Which of the fol-low-ing val-
  []
@@ -1543,10 +1563,49 @@ tion
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 203--205
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Excluding 'comment' comment. [2] (./main.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--264
+
+ []
+
+Excluding 'comment' comment.
+Underfull \hbox (badness 10000) in paragraph at lines 265--289
+
+ []
+
+[2] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1557,7 +1616,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  30391 strings out of 474116
  607632 string characters out of 5732613
- 1965187 words of memory out of 5000000
+ 1964187 words of memory out of 5000000
  52016 multiletter control sequences out of 15000+600000
  615284 words of font info for 149 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1572,7 +1631,7 @@ ellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb>
 fonts/txsyc.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 56055 bytes).
+Output written on main.pdf (2 pages, 54264 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
