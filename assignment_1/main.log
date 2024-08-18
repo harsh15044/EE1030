@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  12 AUG 2024 21:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  18 AUG 2024 21:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1493,6 +1493,9 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 7
 txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
+Underfull \vbox (badness 4291) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/pdftex/u
@@ -1500,9 +1503,11 @@ pdmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/font
 s/enc/dvips/base/8r.enc}
 
 
-] [2
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (./main.aux)
+ [2]
+(./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1513,11 +1518,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  30394 strings out of 474116
  607600 string characters out of 5732613
- 1969187 words of memory out of 5000000
+ 1967187 words of memory out of 5000000
  52020 multiletter control sequences out of 15000+600000
  616660 words of font info for 151 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,7n,103p,1172b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,7n,103p,1172b,669s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/
 txfonts/rtxmi.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fon
 ts/type1/public/txfonts/rtxr.pfb></opt/homebrew/Cellar/texlive/20240312_1/share
@@ -1526,7 +1531,7 @@ ts/type1/public/txfonts/rtxr.pfb></opt/homebrew/Cellar/texlive/20240312_1/share
 ellar/texlive/20240312_1/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></op
 t/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on main.pdf (2 pages, 44628 bytes).
+Output written on main.pdf (2 pages, 44625 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  125 compressed objects within 2 object streams
