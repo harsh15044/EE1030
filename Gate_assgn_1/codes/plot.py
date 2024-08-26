@@ -40,7 +40,7 @@ for i, txt in enumerate(vert_labels):
                  ha='center')
 
 plt.xlabel('$x$')
-plt.xlabel('$y$')
+plt.ylabel('$y$')
 plt.legend(loc='best')
 plt.grid()
 plt.axis('equal')
