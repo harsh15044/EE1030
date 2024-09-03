@@ -1,48 +1,52 @@
 import matplotlib.pyplot as plt
 
-def read_coordinates(output):
+def read_points(output):
     with open(output, 'r') as file:
         lines = file.readlines()
-    
-    #Reading and cleaning the cordinates from the file
-    coordinates = []
-    for line in lines:
-        line = line.strip().strip('()')
-        x, y = map(float, line.split(','))
-        coordinates.append((x, y))
-    
-    return coordinates
+
+
+
+#Reading the coordinates of the points from the files
+    line1 = lines[0].strip().strip('()')
+    B_x, B_y = map(float, line1.split(','))
+
+    line2 = lines[1].strip().strip('()')
+    A_x, A_y = map(float, line2.split(','))
+
+    line3 = lines[2].strip().strip('()')
+    R_x, R_y = map(float, line3.split(','))
+
+    return [[B_x, B_y], [A_x, A_y], [R_x, R_y]]
+
+def plot_coordinates(coordinates):
+    B_x, B_y = coordinates[0][0], coordinates[0][1]
+    A_x, A_y = coordinates[1][0], coordinates[1][1]
+    R_x, R_y = coordinates[2][0], coordinates[2][1]
+
+    #making limits for the plot
+    all_x = [B_x, A_x, R_x]
+    all_y = [B_y, A_y, R_y]
+
+    margin =1 
+
+    #line plot
+    plt.plot([B_x, A_x], [B_y, A_y], 'b-', label='Line $AB$')
 
     
-    #Extracting B,A,R
-    B = coordinates[0]
-    A = coordinates[1]
-    R = coordinates[2]
+    #Points plot
+    plt.plot(B_x, B_y, 'bo')  
+    plt.text(B_x, B_y, f'$B$ ({B_x:.2f}, {B_y:.2f})', color='magenta')
     
-    #Calculating limits for the plot
-    all_x = [x for x, y in coordinates]
-    all_y = [y for x, y in coordinates]
+    plt.plot(A_x, A_y, 'go')  
+    plt.text(A_x, A_y, f'$A$ ({A_x:.2f}, {A_y:.2f})', color='green')
     
-    margin = 1  # Adding margins
-    plt.xlim(min(all_x) - margin, max(all_x) + margin)
-    plt.ylim(min(all_y) - margin, max(all_y) + margin)
-    
-    #Plotting the line
-    plt.plot([B[0], A[0]], [B[1], A[1]], 'b-', label='Line AB')
-    
-    #Ploting and labelling the points
-    plt.plot(*B, 'bo')  
-    plt.text(B[0], B[1], f'B ({B[0]:.2f}, {B[1]:.2f})', fontsize=12, color='blue', verticalalignment='bottom')
-    
-    plt.plot(*A, 'go')  
-    plt.text(A[0], A[1], f'A ({A[0]:.2f}, {A[1]:.2f})', fontsize=12, color='green', verticalalignment='bottom')
-    
-    plt.plot(*R, 'ro')  
-    plt.text(R[0], R[1], f'R ({R[0]:.2f}, {R[1]:.2f})', fontsize=12, color='red', verticalalignment='bottom')
+    plt.plot(R_x, R_y, 'ro')  
+    plt.text(R_x, R_y, f'$R$ ({R_x:.2f}, {R_y:.2f})', color='red')
 
-    plt.xlabel('X')
-    plt.ylabel('Y')
-    plt.title('Line AB with Point R')
+
+    plt.xlabel('$X$')
+    plt.ylabel('$Y$')
+    plt.title('Line $AB$ with Point $R$')
     plt.legend()
     plt.grid(True)
     plt.savefig('../plots/plot.png', format='png', bbox_inches='tight')
@@ -50,7 +54,8 @@ def read_coordinates(output):
 
 if __name__ == "__main__":
     #fetching coordinates from the file
-    coordinates = read_coordinates("output")
+    coordinates = read_points("output")
+    
     
     #final plot
     plot_coordinates(coordinates)
