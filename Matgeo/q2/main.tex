@@ -41,7 +41,7 @@
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
 
-\title{10.5.3.9}
+\title{1-1.9-24}
 \author{AI24BTECH11015 - Harshvardhan Patidar}
  \maketitle
 % \newpage
@@ -58,6 +58,35 @@
 \renewcommand{\thetable}{\theenumi}
 
 
+	Question:\\
+		The $x$-coordinate of a point $\vec{P}$ twice its $y$-coordinate. If $\vec{P}$ is equidistant from the points $\vec{Q} \brak{2,-5}$ and $\vec{R} \brak{-3,6}$, find the coordinates of $\vec{P}$.\\ \\
+
+
+	\solution\\
+		Let $y$-coordinate of $\vec{P}$ be $a$.\\
+		Then, 
+			\begin{align*}
+				\vec{P} = \myvec{2a\\a}
+			\end{align*}
+
+		Now, since $\vec{P}$ is equidistant from $\vec{Q}$ and $\vec{R}$,
+			\begin{align}
+				\lVert \vec{P} - \vec{Q} \rVert  &=  \lVert \vec{P} - \vec{R} \rVert\\
+				\lVert \vec{P} - \vec{Q} \rVert ^ 2  &=  \lVert \vec{P} - \vec{R} \rVert ^ 2\\
+				\vec{P}^2 + \vec{Q}^2 - 2 \vec{P}\vec{Q}^{\top} &= \vec{P}^2 + \vec{R}^2 - 2\vec{P}\vec{R}^{\top}\\
+				2\vec{P} \brak{\vec{R}^{\top} - \vec{Q}^{\top}} &= \vec{R}^2 - \vec{Q}^2\\
+				\myvec{2a\\a}\myvec{-5&11} &= 8 \\
+				a&=8
+			\end{align}
+
+			So, $$\vec{P} = \myvec{16\\8}$$
+
+			               
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{plots/plot.png}
+	\end{figure}
+		
   
 \end{document}
 
