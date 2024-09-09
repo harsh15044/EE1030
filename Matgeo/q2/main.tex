@@ -59,24 +59,30 @@
 
 
 	Question:\\
-		The $x$-coordinate of a point $\vec{P}$ twice its $y$-coordinate. If $\vec{P}$ is equidistant from the points $\vec{Q} \brak{2,-5}$ and $\vec{R} \brak{-3,6}$, find the coordinates of $\vec{P}$.\\ \\
+		The $x$-coordinate of a point $\vec{P}$ twice its $y$-coordinate. If $\vec{P}$ is equidistant from the points $\vec{Q} \myvec{2&-5}$ and $\vec{R} \myvec{-3&6}$, find the coordinates of $\vec{P}$.\\ \\
 
 
 	\solution\\
-		Let $y$-coordinate of $\vec{P}$ be $a$.\\
-		Then, 
-			\begin{align*}
-				\vec{P} = \myvec{2a\\a}
-			\end{align*}
+		\begin{table}[h!]    
+  			\centering
+  			\input{tables/table.tex}
+  			\caption{Variables Used}
+  			\label{tab1-1.9-24}
+		\end{table}\\
 
+		
 		Now, since $\vec{P}$ is equidistant from $\vec{Q}$ and $\vec{R}$,
 			\begin{align}
-				\lVert \vec{P} - \vec{Q} \rVert  &=  \lVert \vec{P} - \vec{R} \rVert\\
-				\lVert \vec{P} - \vec{Q} \rVert ^ 2  &=  \lVert \vec{P} - \vec{R} \rVert ^ 2\\
-				\vec{P}^2 + \vec{Q}^2 - 2 \vec{P}\vec{Q}^{\top} &= \vec{P}^2 + \vec{R}^2 - 2\vec{P}\vec{R}^{\top}\\
-				2\vec{P} \brak{\vec{R}^{\top} - \vec{Q}^{\top}} &= \vec{R}^2 - \vec{Q}^2\\
-				\myvec{2a\\a}\myvec{-5&11} &= 8 \\
-				a&=8
+				\norm{P - Q}  &=  \norm{ P - R }\\
+				\sqrt{\brak{P-Q}^T\brak{P-Q}}&=\sqrt{\brak{P-R}^T\brak{P-R}}
+			\end{align}
+
+			$$ \brak{P-Q} = \myvec{2a-2\\a+5}, \brak{P-R} = \myvec{2a+3\\a-6}$$
+
+			Putting values into equation 0.2 and squaring,
+			\begin{align}	
+				(2a-2)^2 + (a+5)^2 &= (2a+3)^2 + (a-6)^2\\
+				a &= 8
 			\end{align}
 
 			So, $$\vec{P} = \myvec{16\\8}$$
@@ -89,5 +95,22 @@
 		
   
 \end{document}
+				
+
+
+
+				%Let $y$-coordinate of $\vec{P}$ be $a$.\\
+				%Then, 
+				%	\begin{align*}
+				%		\vec{P} = \myvec{2a\\a}
+				%	\end{align*}
+
+
+				%\lVert \vec{P} - \vec{Q} \rVert ^ 2  &=  \lVert \vec{P} - \vec{R} \rVert ^ 2\\
+				%\vec{P}^2 + \vec{Q}^2 - 2 \vec{P}\vec{Q}^{\top} &= \vec{P}^2 + \vec{R}^2 - 2\vec{P}\vec{R}^{\top}\\
+				%2\vec{P} \brak{\vec{R}^{\top} - \vec{Q}^{\top}} &= \vec{R}^2 - \vec{Q}^2\\
+				%\myvec{2a\\a}\myvec{-5&11} &= 8 \\
+				%a&=8
+
 
 
