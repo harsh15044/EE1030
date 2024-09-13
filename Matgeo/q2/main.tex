@@ -74,23 +74,26 @@
 		Now, since $\vec{P}$ is equidistant from $\vec{Q}$ and $\vec{R}$,
 			\begin{align}
 				\norm{P - Q}  &=  \norm{ P - R }\\
-				\sqrt{\brak{P-Q}^T\brak{P-Q}}&=\sqrt{\brak{P-R}^T\brak{P-R}}
+				\sqrt{\brak{P-Q}^T\brak{P-Q}}&=\sqrt{\brak{P-R}^T\brak{P-R}} \label{eqn}
 			\end{align}
 
 			$$ \brak{P-Q} = \myvec{2a-2\\a+5}, \brak{P-R} = \myvec{2a+3\\a-6}$$
 
-			Putting values into equation 0.2 and squaring,
+			Putting values into equation \eqref{eqn} and squaring,
 			\begin{align}	
 				(2a-2)^2 + (a+5)^2 &= (2a+3)^2 + (a-6)^2\\
 				a &= 8
 			\end{align}
 
-			So, $$\vec{P} = \myvec{16\\8}$$
+			So, 
+			\begin{align}
+				\vec{P} = \myvec{16\\8}
+			\end{align}
 
 			               
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.6\textwidth]{plots/plot.png}
+		\includegraphics[width=\textwidth]{plots/plot.png}
 	\end{figure}
 		
   
