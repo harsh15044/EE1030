@@ -49,8 +49,8 @@ plt.grid(True) # minor
 plt.axis('equal')
 plt.title('Unit vector at $30^{\degree}$ from $x$-axis')
 
-plt.xticks(np.arange(-1, 6, 1))
-plt.yticks(np.arange(-1, 6, 1))
+plt.xticks(np.arange(-1, 3, 1))
+plt.yticks(np.arange(-1, 3, 1))
 
 
 
