@@ -53,6 +53,7 @@
 \setlength{\intextsep}{10pt} % Space between text and floats
 
 
+
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
 \renewcommand{\thetable}{\theenumi}
@@ -60,7 +61,32 @@
 Question: \\
 	Draw a right triangle $ABC$ in which $BC = 12$ cm, $AB = 5$cm and $\angle B = 90^{\degree}$.\\ \\
 
-\solution 
+
+\solution\\
+	 \begin{table}[h!]    
+      		\centering
+      		\input{tables/table.tex}
+      		\caption{}
+	\end{table}\\
+
+	We need to find side b. Using the Pythagoras Theorem, we have:
+	\begin{align}
+		b^2 &= a^2 + c^2 \\
+		b^2 &= 12^2 + 5^2\\
+		b^2 &= 144 + 25\\
+		b^2 &= 169\\
+		b &= \sqrt(169)\\
+		b &= 13 cm
+	\end{align}
+	Thus, the length $b$ of side $\mathbf{AC}$ is 13 cm.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\linewidth]{plots/plot.png}
+		\caption{}
+       		\label{graph}
+    	\end{figure}
+
 	
 
 
