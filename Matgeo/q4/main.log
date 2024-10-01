@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  1 OCT 2024 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  1 OCT 2024 12:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2164,10 +2164,6 @@ dmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -2182,17 +2178,16 @@ Here is how much of TeX's memory you used:
 </opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msam10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texm
 f-dist/fonts/type1/public/txfonts/rtxr.pfb></opt/homebrew/Cellar/texlive/202403
-12_1/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></opt/homebrew/Cellar
-/texlive/20240312_1/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></opt/
-homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/urw/times/utmb8
-a.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/urw
-/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/t
-exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 73525 bytes).
+12_1/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></opt/homebrew/Cellar
+/texlive/20240312_1/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/hom
+ebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/urw/times/utmbi8a.
+pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (2 pages, 71785 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  11 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
