@@ -1,0 +1,213 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{XE - 2007}
+\author{AI24BTECH11015 - Harshvardhan Patidar}
+ \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    \item Let $M = \myvec{1&1&1\\0&1&1\\0&0&1}$. Then the maximum number of linearly independent eigenvectors of $M$ is
+        \begin{enumerate}
+            \item $0$
+            \item $1$
+            \item $2$
+            \item $3$
+        \end{enumerate}
+
+    \item Let $L =$ $$\lim_{x \to \frac{\pi}{2}} \frac{\sin ^ 2 2x}{\brak{x - \frac{pi}{2}}^2}$$ Then $L$ is equal to
+        \begin{enumerate}
+            \item $-4$
+            \item $0$
+            \item $2$
+            \item $4$
+        \end{enumerate}
+
+    \item Let $f(z) = \frac{1}{1-z^2}$. The coeficiient of $\frac{1}{z-1}$ in the Laurent expansion of $f(z)$ about $z=1$ is
+        \begin{enumerate}
+            \item $-1$
+            \item $-1/2$
+            \item $1/2$
+            \item $1$
+        \end{enumerate}
+
+    \item Let $u\brak{x,t}$ be the solution of the initial value problem 
+    \begin{align*}
+        \frac{\partial ^ 2 u}{\partial t^2} = 9 \frac{\partial ^ 2 u}{\partial x^2}, t>0, - \infty < x< \infty,\\
+        u\brak{x,0} = x+5,\\
+        \frac{\partial u}{\partial t}\brak{x,0} = 0.
+    \end{align*}
+    Then $u\brak{2,2}$ is 
+        \begin{enumerate}
+            \item $7$
+            \item $13$
+            \item $14$
+            \item $26$
+        \end{enumerate}
+
+    \item Two students take a test consisting of five $TRUE / FALSE$ questions. To pass the test the students have to answer atleast three questions correctly. Both of them know the correct answers to two questions and guess the answers to the remaining three. The probability that only one student passes the test is equal to
+        \begin{enumerate}
+            \item $\frac{6}{32}$
+            \item $\frac{7}{32}$
+            \item $\frac{1}{4}$
+            \item $\frac{3}{4}$
+        \end{enumerate}
+
+    \item The equation $g\brak{x} = x$ is solved by Newton-Raphson iteration method, santirtg with
+    na initial approximation $x_0$ near the simple root $\alpha$ .If $X_{n+1}$ is the approximation to
+    $\alpha$ at the $\brak{n+1}^th$ iteration, then
+        \begin{enumerate}
+            \item $x_{n+1} = \frac{x_n g^{\prime}\brak{x_n}-g\brak{x_n}}{1 - g^{\prime}\brak{x_n}}$
+            \item $x_{n+1} = \frac{x_n g^{\prime}\brak{x_n}-g\brak{x_n}}{g^{\prime}\brak{x_n}-1}$
+            \item $x_{n+1} = g\brak{x_n}$
+            \item $x_{n+1} = \frac{x_n g^{\prime}\brak{x_n}-g\brak{x_n}+ 2 x_n}{g^{\prime}\brak{x_n}+1}$
+        \end{enumerate}
+
+    \item Let $Ax= b$ be asystem of $m$ linear equations in $n$ unknowns with $m< n$ and $b\neq0$. Then the system has
+        \begin{enumerate}
+            \item $n-m$ solutions
+            \item either zero or infinitely many solutions
+            \item exactly one solution
+            \item $n$ solutions
+        \end{enumerate}
+
+    \item Let $R$ be an $n \times n$ nonsingular matrix. Let $P$ and $Q$ be two $n \times n$ matrices such
+    that $Q= R^{-1}PR$. If $x$ si an eigenvector of $P$ corresponding to a nonzero eigenvalue $\lambda$ of $P$,then
+        \begin{enumerate}
+            \item $Rx$ is an eigenvector of $Q$ corresponding to the eigenvalue $\lambda$ of $Q$
+            \item $Rx$ is an eigenvector of $Q$ corresponding to the eigenvalue $\frac{1}{\lambda}$ of $Q$
+            \item $R^{-1}x$ is an eigenvector of $Q$ corresponding to the eigenvalue $\frac{1}{\lambda}$ of $Q$
+            \item $R^{-1}x$ is an eigenvector of $Q$ corresponding to the eigenvalue $\lambda$ of $Q$
+        \end{enumerate}
+
+    \item Let $M$ be a $2 \times 2$ matrix with eigenvalues $1$ and $2$. Then $M^{-1}$ is
+        \begin{enumerate}
+            \item $\frac{M-3I}{2}$
+            \item $\frac{3I+M}{2}$
+            \item $\frac{3I-M}{2}$
+            \item $\frac{-M-3I}{2}$
+        \end{enumerate}
+
+    \item The number of $n \times n$ matrices that are simultaneously Hermitian, unitary and diagonal is
+        \begin{enumerate}
+            \item $2^n$
+            \item $n^2$
+            \item $2n$
+            \item $2$
+        \end{enumerate}
+
+    \item Let $M = \myvec{1&b&a\\0&2&c\\0&0&1}$, where $a,b,c$ are real numbers. Then $M$ is diagonalizable 
+        \begin{enumerate}
+            \item for all values of $a,b,c$
+            \item only when $bc \neq a$
+            \item only when $b+c=a$
+            \item only when $bc=a$
+        \end{enumerate}
+
+    \item The maximum value of the function $2x +3y +4z$ on the ellipsoid $2x^2 +3y^2+ 4z^2 = 1$ is
+        \begin{enumerate}
+            \item $2$
+            \item $3$
+            \item $6$
+            \item $9$
+        \end{enumerate}
+
+    \item Let $f : \mathcal{R} \to \mathcal{R}$ be a twice differentiable real valued function such that $f\brak{\frac{1}{n}} = 1$ for $n = 1,2,3,\ldots$. Then
+        \begin{enumerate}
+            \item $f^{\prime}\brak{0} = 0$
+            \item $f^{\prime}\brak{0} = 1$
+            \item $0 < f^{\prime}\brak{0} < 1$
+            \item $f^{\prime}\brak{0} > 1$
+        \end{enumerate}
+
+    \item Let $f\brak{x} = \int_{0}^{x^2} \sin \sqrt{t} dt$ for $x\geq0$. Then $f^{\prime}\brak{\frac{\pi}{2}}$ is equal to
+        \begin{enumerate}
+            \item $0$
+            \item $\pi$
+            \item $1$
+            \item $\frac{\pi}{2}$
+        \end{enumerate}
+
+    \item The value of the contour integral $\oint_{\abs{z}=1} \frac{\cosh z}{4z^2+1} dz$ is equal to
+        \begin{enumerate}
+            \item $2 \pi \cosh \brak{i/2}$
+            \item $\pi \cosh \brak{i/2}$
+            \item $0$
+            \item $2 \pi i$
+        \end{enumerate}
+
+    \item Let $\brak{(x + iy} = u\brak{x,y} + iv\brak{x,y}$ be an analytic function defined on the complex plane satisfying $2u^2 + 3v^2=1$. Then
+        \begin{enumerate}
+            \item $f$ is a constant
+            \item $f\brak{z} = kz$ for some nonzero real number $k$
+            \item $u\brak{x,y} = \frac{\cos \brak{x+y}}{\sqrt{2}}$
+            \item $v\brak{x,y} = \frac{\sin \brak{x-y}}{\sqrt{3}}$
+        \end{enumerate}
+
+    \item The value of $\oint_{C} \brak{xy^2 + 2x}dx + \brak{x^2y + 4x}dy$ along the circle $C: x^2 + y^2=4$ in the anticlockwise direction is
+        \begin{enumerate}
+            \item $-16 \pi$
+            \item $-4 \pi$
+            \item $4 \pi$
+            \item $16 \pi$
+        \end{enumerate}
+\end{enumerate}
+
+
+
+
+  
+\end{document}
+
+
