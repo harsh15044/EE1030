@@ -1,0 +1,236 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{CE - 2008}
+\author{AI24BTECH11015 - Harshvardhan Patidar}
+ \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    \item A road is provided with a horizontal circular curve having deflection angle of  $55^{\circ}$ and centre line radius of $250 m$. A transition curve is to be provided at each end of the circular curve of such a length that the rate of gain of radial acceleration is $0.3 m/s^3$ at a speed of $50 km$ per hour. Length of the transition curve required at each of the ends is
+        \begin{enumerate}
+            \item $2.57m$
+            \item $33.33m$
+            \item $35.73m$
+            \item $1666.67m$
+        \end{enumerate}
+
+    \item A light house of $120 m$ height is just visible above the horizon from a ship. The corect distance $\brak{m}$ between the ship and the light house considering combined correction for curvature and refraction, is
+        \begin{enumerate}
+            \item $39.098$
+            \item $42.226$
+            \item $39098$
+            \item $42226$
+        \end{enumerate}
+
+        \section*{Common Data Questions}
+            \subsection*{Common Data for Questions \ref{71}, \ref{72} and \ref{73}:}
+             
+            A rectangular channel $6.0 m$ wide carries a discharge of $16.0 m^3 / s$ under uniform flow condition with normal depth fo $1.60 m$. Manning's $n$ is $0.015$.
+
+            \item \label{71} The longitudinal slope of the channel is
+                \begin{enumerate}
+                    \item $0.000585$
+                    \item $0.000485$
+                    \item $0.000385$
+                    \item $0.000285$
+                \end{enumerate}
+            \item \label{72}  A hump is to be provided on the channel bed. The maximum height of the hump without afecting the upstream flow condition is
+                \begin{enumerate}
+                    \item $0.50m$
+                    \item $0.40m$
+                    \item $0.30m$
+                    \item $0.20m$
+                \end{enumerate}
+
+            \item \label{73} The channel width is to be contracted. The minimum width to which the channel can be contracted without affecting the upstream flow condition is
+                \begin{enumerate}
+                    \item $3.0m$
+                    \item $3.8m$
+                    \item $4.1m$
+                    \item $4.5m$
+                \end{enumerate}
+
+            \subsection*{Common data for Questions \ref{74} and \ref{75}:}
+            A reinforced concrete beam of rectangular cross section of breadth $230 mm$ and effective depth $400 mm$ is subjected to a maximum factored shear force of $120 $kN. The grades of concrete, main steel and stirrup steel are M$20$, Fe$415$ and Fe$250$ respectively. For the area of main steel provided, the design shear strength $\tau_c$ as per IS:$456-200$ is $0.48 N/mm^2$. The beam is designed for collapse limit state.
+            \item \label{74} The spacing $\brak{mm}$ of $2$-legged $8 mm$ stirrups to be provided is
+                \begin{enumerate}
+                    \item $40$
+                    \item $115$
+                    \item $250$
+                    \item $400$
+                \end{enumerate}
+            \item \label{75} In addition, the beam is subjected to a torque whose factored value is $10.90$ kN$m$. The stirrups have to be provided to carry a shear (kN) equal to
+                \begin{enumerate}
+                    \item $50.42$
+                    \item $130.56$
+                    \item $151.67$
+                    \item $200.23$
+                \end{enumerate}
+
+    \section*{Linked Answer Questions: Q.\ref{76} to Q.\ref{85} carry two marks each.}
+        \subsection*{Statement for Linked Answer Questions \ref{76} and \ref{77}:}
+        Beam $GHI$ is supported by three pontoons as shown in the figure \ref{76-77}. The horizontal cross-sectional area of each pontoon is $8m^2$, the flexural rigidity of the beam is $10000$ kN-$m^2$ and the unit weight of water is $10$ kN$/m^3$.
+        \begin{figure}[H]
+            \centering
+            \input{figs/76-77.tex}
+            \caption{}
+            \label{76-77}
+        \end{figure}
+        \item \label{76} When the middle pontoon is removed, the deflection at $H$ will be
+                \begin{enumerate}
+                    \item $0.2m$
+                    \item $0.4m$
+                    \item $0.6m$
+                    \item $0.8m$
+                \end{enumerate}
+
+            \item \label{77} When the midle pontoon is brought back to its position as shown in the figure \ref{76-77}, the reaction at $H$ will be
+                \begin{enumerate}
+                    \item $8.6$ kN
+                    \item $15.7$ kN
+                    \item $19.2$ kN
+                    \item $24.2$ kN
+                \end{enumerate}
+
+    \subsection*{Statement for Linked Answer Questions \ref{78} and \ref{79}:}
+    The ground conditions at a site are shown in the figure \ref{78-79}
+    \begin{figure}[H]
+        \centering
+        \input{figs/78-79.tex}
+        \caption{}
+        \label{78-79}
+    \end{figure}
+
+    \item \label{78} The saturated unit weight of the sand (kN$/m^3$)
+        \begin{enumerate}
+            \item $15$
+            \item $18$
+            \item $21$
+            \item $24$
+        \end{enumerate}
+
+    \item \label{79} The total stress, pore water pressure and effective stress (kN$/m^2$) at the point $\vec{P}$ are, respectively
+        \begin{enumerate}
+            \item $75,50$ and $25$
+            \item $90,50$ and $40$
+            \item $105,50$ and $55$
+            \item $120,50$ and $70$
+        \end{enumerate}
+    \subsection*{Statement for Linked Answer Questions \ref{80} and \ref{81}:}
+    A column is supported on a footing as shown in the figure \ref{80-81}. The water is at a depth of $10m$ below the base of the footing.
+    \begin{figure}[H]
+        \centering
+        \input{figs/80-81.tex}
+        \caption{}
+        \label{80-81}
+    \end{figure}
+    \item \label{80} The net ultimate bearing capacity (kN$/m^2$) of the footing based on Terzaghi's bearing capacity equation is
+        \begin{enumerate}
+            \item $216$
+            \item $432$
+            \item $630$
+            \item $846$
+        \end{enumerate}
+
+    \item \label{81} The safe load (kN) that the footing can carry with a factor of safety $3$ is 
+        \begin{enumerate}
+            \item $282$
+            \item $648$
+            \item $945$
+            \item $1269$
+        \end{enumerate}
+
+    \subsection*{Statement for Linked Answer Questions \ref{82} and \ref{83}:}
+    An automobile with projected area $26m^2$ is running on a road with a speed of $120$ km per hour.The mass density and the kinematic viscosity of air are $1.2 kg/m^3$ and $1.5\times 10^{-5} m^2/s$, respectively. The drag coefficient is $0.30$.
+    \item \label{82} The drag force on the automobile is
+        \begin{enumerate}
+            \item $620N$
+            \item $600N$
+            \item $580N$
+            \item $520N$
+        \end{enumerate}
+
+    \item \label{83} The metric horse power required to overcome the drag force is 
+        \begin{enumerate}
+            \item $33.23$
+            \item $31.23$
+            \item $23.23$
+            \item $20.23$
+        \end{enumerate}
+
+    \subsection*{Statement for Linked Answer Questions \ref{84} and \ref{85}:}
+    A horizontal circular curve with a centre line radius of $200 m$ is provided on a $2$-lane, $2$-way SH section. The width of the $2$-lane road is $7.0 m$. Design speed for this section is $80$ km per hour. The brake reaction times is $2.4 s$, and the coefficients of friction in longitudinal and lateral directions are $0.355$ and $0.15$, respectively.
+    \item \label{84} The safe stopping sight distance on the section is 
+        \begin{enumerate}
+            \item $221m$
+            \item $195m$
+            \item $125m$
+            \item $65m$
+        \end{enumerate}
+
+    \item \label{85} The set-back distance from the centre line of the inner lane is 
+        \begin{enumerate}
+            \item $7.93m$
+            \item $8.10m$
+            \item $9.60m$
+            \item $9.77m$
+        \end{enumerate}
+\end{enumerate}
+
+
+  
+\end{document}
+
+

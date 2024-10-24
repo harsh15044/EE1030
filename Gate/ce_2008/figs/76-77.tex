@@ -1,0 +1,43 @@
+\begin{circuitikz}[scale=0.25]
+\tikzstyle{every node}=[font=\LARGE]
+\draw [ fill={rgb,255:red,209; green,209; blue,209} , line width=1pt ] (-8.75,27) rectangle (-2.5,15.75);
+\draw [ fill={rgb,255:red,209; green,209; blue,209} , line width=1pt ] (22.5,27) rectangle (28.75,15.75);
+\draw [short] (-6.25,27) -- (-5.75,28.25);
+\draw [short] (-5,27) -- (-5.75,28.25);
+\draw [short] (25,27) -- (25.5,28.25);
+\draw [short] (26.25,27) -- (25.5,28.25);
+\draw [ line width=1.6pt](-5.75,28.25) to[short, -o] (0,28.25) ;
+\draw [ line width=1.6pt](25.5,28.25) to[short, -o] (20,28.25) ;
+\draw [ line width=1.6pt](0,28.25) to[short] (20,28.25);
+\draw [line width=1pt, short] (-6.25,27) -- (-5.75,28.25);
+\draw [line width=1pt, short] (-5,27) -- (-5.75,28.25);
+\draw [line width=1pt, short] (25,27) -- (25.5,28.25);
+\draw [line width=1pt, short] (26.25,27) -- (25.5,28.25);
+\draw [line width=1pt, short] (5,28.25) -- (3.75,27);
+\draw [line width=1pt, short] (5,28.25) -- (6.25,27);
+\draw [line width=1pt, short] (10,28.25) -- (8.75,27);
+\draw [line width=1pt, short] (10,28.25) -- (11.25,27);
+\draw [line width=1pt, short] (13.75,27) -- (15,28.25);
+\draw [line width=1pt, short] (15,28.25) -- (16.25,27);
+\draw [ color={rgb,255:red,255; green,255; blue,255} , fill={rgb,255:red,247; green,247; blue,247}, line width=1pt ] (-2.5,24.5) rectangle (22.5,15.75);
+\draw [ color={rgb,255:red,255; green,255; blue,255} , line width=1pt ] (30,23.25) rectangle (32,23.25);
+\draw [ color={rgb,255:red,255; green,255; blue,255} , line width=1pt ] (9.5,18.75) rectangle (11.5,18.75);
+\draw [ fill={rgb,255:red,209; green,209; blue,209} , line width=1pt ] (3.75,27) rectangle (6.25,20.75);
+\draw [ fill={rgb,255:red,209; green,209; blue,209} , line width=1pt ] (8.75,27) rectangle (11.25,20.75);
+\draw [ fill={rgb,255:red,209; green,209; blue,209} , line width=1pt ] (13.75,27) rectangle (16.25,20.75);
+\node [font=\normalsize] at (10,18.25) {Pontoons};
+\draw [line width=1pt, ->, >=Stealth] (8.5,19) -- (6.5,20.5);
+\draw [line width=1pt, ->, >=Stealth] (9.75,19) -- (9.75,20.5);
+\draw [line width=1pt, ->, >=Stealth] (11,19) -- (13.25,20.5);
+\node [font=\normalsize] at (4.75,29.75) {G};
+\node [font=\normalsize] at (10.75,29.75) {H};
+\node [font=\normalsize] at (15.75,29.75) {I};
+\draw [line width=1.3pt, ->, >=Stealth] (10,33.25) -- (10,28.25);
+\draw [line width=1.3pt, ->, >=Stealth] (10,34.25) -- (12,34.25)node[pos=0.5, fill=white, font = \normalsize]{P = $48$ kN};
+\draw [ line width=1.3pt](3.75,14.5) to[short] (16.25,14.5);
+\draw [ line width=1.3pt](10,15.25) to[short] (10,14);
+\draw [ line width=1.3pt](3.75,15.25) to[short] (3.75,14);
+\draw [ line width=1.3pt](16.25,15.25) to[short] (16.25,14);
+\node [font=\normalsize] at (6.75,13.75) {$5m$};
+\node [font=\normalsize] at (12.75,13.75) {$5m$};
+\end{circuitikz}
