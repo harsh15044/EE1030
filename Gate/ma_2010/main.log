@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  26 OCT 2024 01:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  26 OCT 2024 01:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2140,7 +2140,12 @@ File: ts1txr.fd 2000/12/15 v3.1
 updmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fon
 ts/enc/dvips/base/8r.enc}
 
-] [2] [3] (./main.aux)
+]
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
+
+ []
+
+[2] [3] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -2159,7 +2164,7 @@ Here is how much of TeX's memory you used:
  74688 multiletter control sequences out of 15000+600000
  624575 words of font info for 172 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,6n,109p,1194b,1158s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,6n,109p,1194b,1134s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/
 txfonts/rtxmi.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fon
 ts/type1/public/txfonts/rtxr.pfb></opt/homebrew/Cellar/texlive/20240312_1/share
@@ -2170,7 +2175,7 @@ Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb>
 /utmb8a.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 70313 bytes).
+Output written on main.pdf (3 pages, 70316 bytes).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams
