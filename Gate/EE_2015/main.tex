@@ -1,0 +1,154 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{EE - 2015}
+\author{AI24BTECH11015 - Harshvardhan Patidar}
+ \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    \item A $50 Hz$ generating unit has $H$-constant of $2 MJ/MVA$. The machine is initially operating in steady state at synchronous speed, and producing $1 pu$ of real power. The initial value of the rotor angle $\delta$ is $5^{\circ}$, when a bolted three phase to ground short circuit fault occurs at the terminal of the generator. Assuming the input mechanical power to remain at $1pu$, the value of $\delta$ in degrees, $0.02$ seconds after the fault is \_\_\_\_\_\_\_.
+
+    \item A sustained three-phase fault occurs in the power system shown in the figure \ref{fig54}. The current and voltage phasors during the fault(on a common reference), after the natural transients have died down, are also shown. Where is the fault located?
+    \begin{figure}[H]
+        \centering
+        \input{figs/fig54.tex}
+        \caption{}
+        \label{fig54}
+    \end{figure}
+    \begin{enumerate}
+        \item Location P
+        \item Location Q
+        \item Location R
+        \item Location S
+    \end{enumerate}
+
+    \item The circuit shown in the figure \ref{fig55} has two sources connected in series. The instantaneous voltage of AC source (in Volt) is given by $v\brak{t} = 12 \sin t$. If the circuit is in steady state, then the rms value of the current (in Ampere) flowing in the circuit is \_\_\_\_\_\_\_.
+    \begin{figure}[H]
+        \centering
+        \input{figs/fig55.tex}
+        \caption{}
+        \label{fig55}
+    \end{figure}
+
+    \item In a linear two-port network, when $10V$ is applied to Port $1$, a current of $4A$ flows through Port $2$ when it is short-circuited. When $5V$ is applied to Port $1$, a current of $1.25A$ flows through a $1 \ohm$ resistance connected accros Port $2$. When $3V$ is applied to Port $1$, the current (in Ampere) through a $2 \ohm$ resistance connected across Port $2$ is \_\_\_\_\_\_\_\_.
+
+    \item In the given circuit, the parameter $k$ is positive, and the power dissipated in the $2 \ohm$ resistor is $12.5$W. The value of $k$ is \_\_\_\_\_\_\_\_.
+        \begin{figure}[H]
+            \centering
+            \input{figs/fig57.tex}
+            \caption{}
+            \label{fig57}
+        \end{figure}
+
+    \item A separately excited DC motor runs at $1000$ rpm on no load when its armature terminals are connected to a $200V$ DC source and the rated voltage is applied to the field winding. The armature resistance of this motor is $1  \ohm$. The no-load armature current is negligible. With the motor developing its full load torque, the armature voltage is set so that the rotor speed is $500$ rpm. When the load torque is reduced to $50\%$ of the full load value under the same armature voltage conditions, the speed rises to $520$ rpm. Neglecting the rotational losses, the full load armature current (in Ampere) is \_\_\_\_\_\_\_\_.
+    \item A DC motor has the following specifications: $10$ hp, $37.5A$, $230V$ ; flux / pole = $0.01$ Wb, number of poles = $4$, number of conductors $=666$, number of parallel paths $=2$. Armature resistance $=0.267 \ohm$. The armature reaction is negligible and rotational losses are $600W$. The motor operates from a $230V$ DC supply. If the motor runs at $1000$ rpm, the output torque produced (in NM) is \_\_\_\_\_\_\_\_.
+    \item A $200$/$400 V$, $50$Hz, two-winding transformer is rated to $20$kVA. Its windings are connected as an auto-transformer of rating $200$/$600V$. A resistive load of $12 \ohm$ is connected to the high voltage $\brak{600V}$ side of the auto-transformer. The values of equivalent load resistance (in Ohm) as seen from low voltage side is \_\_\_\_\_\_\_\_.
+    \item Two single-phase transformers $T_1$ and $T_2$ each rated at $500$kVA are operated in parallel. Percentage impedances of $T_1$ and $T_2$ are $\brak{1 + j6}$ and $\brak{0.8 + j4.8}$, respectively. To share a load of $1000$kVA at $0.8$ lagging power factor, the contribution of $T_2$(in kVA) is \_\_\_\_\_\_\_\_.
+
+    \item In the signal flow diagram given in the figure \ref{fig62}, $u_1$ and $u_2$ are possible inputs whereas $y_1$ and $y_2$ are possible outputs. When would the SISO system derived from this diagram be controllable and observable?
+    \begin{figure}[H]
+        \centering
+        \input{figs/fig62.tex}
+        \caption{}
+        \label{fig62}
+    \end{figure}
+
+    \begin{enumerate}
+        \item When $u_1$ is the only input and $y_1$ is the only output.
+        \item When $u_2$ is the only input and $y_1$ is the only output.
+        \item When $u_1$ is the only input and $y_2$ is the only output.
+        \item When $u_2$ is the only input and $y_2$ is the only output.
+    \end{enumerate}
+
+    \item The transfer function of a second order real system with a perfectly flat magnitude response of unity has pole at $\brak{2-j3}$. List all the poles and zeroes.
+        \begin{enumerate}
+            \item Poles at $\brak{2 \pm j3}$, no zeroes.
+            \item Poles at $\brak{\pm 2 - j3}$, one zero at origin.
+            \item Poles at $\brak{2 - j3}$, $\brak{-2 + j3}$, zeroes at $\brak{-2-j3}, \brak{2+j3}$
+            \item Poles at $\brak{2 \pm j3}$, zeroes at $\brak{-2 \pm j3}$
+        \end{enumerate}
+
+    \item Find the transfer function $\frac{Y\brak{s}}{X\brak{s}}$ of the system given below.
+    
+        \begin{figure}[H]
+            \centering
+            \input{figs/fig64.tex}
+            \caption{}
+            \label{fig64}
+        \end{figure}
+
+        \begin{enumerate}
+            \item $\frac{G_1}{1-H G_1} + \frac{G_2}{1-H G_2}$
+            \item $\frac{G_1}{1+H G_1} + \frac{G_2}{1+H G_2}$
+            \item $\frac{G_1 + G_2}{ 1 + H \brak{G_1 + G_2}}$
+            \item $\frac{G_1 + G_2}{ 1 - H \brak{G_1 + G_2}}$
+        \end{enumerate}
+
+    \item The open loop poles of a third order unity feedback system are $0, -1, -2$. Let the frequency corresponding to the point where locus of the system transits to unstable region be $K$. Now suppose we introduce a zero in the open loop transfer function at $-3$, while keeping all the earlier open loop poles intact. Which one of the following is TRUE about the point where the root locus of the modified system transits to unstable region?
+        \begin{enumerate}
+            \item It corresponds to a frequency greater than $K$
+            \item It corresponds to a frequency less than $K$
+            \item It corresponds to a frequency $K$
+            \item Root locus of modified system never transits to unstable region
+        \end{enumerate}
+
+
+\end{enumerate}
+
+
+  
+\end{document}
+
+

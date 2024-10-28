@@ -1,0 +1,42 @@
+\begin{circuitikz}[scale=0.25]
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ line width=1.8pt](5,13.25) to[short] (5,5.75);
+\draw [ line width=1.8pt](-16.25,13.25) to[short] (-16.25,5.5);
+\draw [ line width=1.8pt](-16.25,12) to[short] (5,12);
+\draw [ line width=1.8pt](-16.25,7) to[short] (5,7);
+\node at (-12.5,12) [circ] {};
+\node at (1.25,12) [circ] {};
+\node at (-12.5,7) [circ] {};
+
+\node [font=\normalsize] at (-12.5,13) {Q};
+\node [font=\normalsize] at (1.25,13.25) {S};
+\node [font=\normalsize] at (-12.5,6) {R};
+\node [font=\normalsize] at (-5.75,12.75) {Transmission Line};
+\node [font=\normalsize] at (-5.75,6.25) {Transmission Line};
+\draw [line width=1.5pt, ->, >=Stealth] (4.5,12.75) -- (2.25,12.75);
+\draw [line width=1.5pt, ->, >=Stealth] (-15.25,12.75) -- (-13.25,12.75);
+\node [font=\normalsize] at (3.25,14.25) {$\bar{I3}$};
+\node [font=\normalsize] at (-14.5,14.25) {$\bar{I1}$};
+\draw [line width=1.5pt, ->, >=Stealth] (-15.25,6.25) -- (-13.25,6.25);
+\draw [line width=1.5pt, ->, >=Stealth] (4.25,6.25) -- (2,6.25);
+\node [font=\normalsize] at (-14.5,4.5) {$\bar{I2}$};
+\node [font=\normalsize] at (3,4.75) {$\bar{I4}$};
+\draw [line width=0.8pt](-22.25,9.5) to[L ] (-16.25,9.5);
+\draw [ line width=0.8pt](-22.25,9.5) to[sinusoidal voltage source, sources/symbol/rotate=auto] (-25.25,9.5);
+\node at (-17.0,9.5) [circ] {};
+\node [font=\normalsize] at (-17.0, 10.5) {P};
+\draw [line width=0.8pt](5,9.5) to[L ] (11,9.5);
+\draw [ line width=0.8pt](11,9.5) to[sinusoidal voltage source, sources/symbol/rotate=auto] (14,9.5);
+\draw [line width=1.3pt, ->, >=Stealth] (-5,-1.75) -- (-0.25,-2.25);
+\draw [line width=1.3pt, ->, >=Stealth] (-5,-1.75) -- (-5,1.25);
+\draw [line width=1.3pt, ->, >=Stealth] (-5,-1.75) -- (6,0.5);
+\draw [line width=1.3pt, ->, >=Stealth] (-5,-1.75) -- (0.25,0.75);
+\draw [line width=1.3pt, ->, >=Stealth] (-5,-1.75) -- (-3,3.25);
+\draw [line width=1.3pt, ->, >=Stealth] (-5,-1.75) -- (-10.25,-1.75);
+\node [font=\normalsize] at (6.75,0) {$\bar{I1}$};
+\node [font=\normalsize] at (-11.75,-1.25) {$\bar{I2}$};
+\node [font=\normalsize] at (0.5,1.5) { $\bar{I3}$};
+\node [font=\normalsize] at (0,-2.25) {$\bar{I4}$};
+\node [font=\normalsize] at (-6.25,1.75) {$\bar{V1}$};
+\node [font=\normalsize] at (-3,3.75) {$\bar{V2}$};
+\end{circuitikz}

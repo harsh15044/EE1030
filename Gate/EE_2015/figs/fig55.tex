@@ -1,0 +1,10 @@
+\begin{circuitikz}[scale=0.4]
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ line width=0.6pt](5,15.75) to[sinusoidal voltage source, sources/symbol/rotate=auto,l={ \normalsize $v(t)$}] (5,9.25);
+\draw (5,9.5) to[battery1,l=$$8V$$] (5,5.75);
+\draw [ line width=0.6pt](5,15.75) to[short] (15,15.75);
+\draw [ line width=0.6pt](5,5.75) to[short] (15,5.75);
+\draw [ line width=0.6pt](15,15.75) to[R,l={ \normalsize $1 \ohm$}] (15,10.75);
+\draw [line width=0.6pt](15,10.75) to[L,l={ \normalsize $1 H$} ] (15,5.75);
+\end{circuitikz}
+

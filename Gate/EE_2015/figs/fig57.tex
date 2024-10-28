@@ -1,0 +1,11 @@
+\begin{circuitikz}[scale = 0.4]
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ line width=0.6pt](2.5,19.5) to[R,l={ \normalsize $2 \ohm$}] (8.75,19.5);
+\draw [ line width=0.6pt](8.75,19.5) to[R,l={ \normalsize $5 \ohm$}] (15,19.5);
+\draw [ line width=0.6pt](8.75,19.5) to[R,l={ \normalsize $10 \ohm$}] (8.75,15.75);
+\draw [ line width=0.6pt](8.75,13.25) to[american controlled current source,l={ \normalsize $k V_{\circ}$}] (8.75,15.75);
+\draw [ line width=0.6pt](8.75,13.25) to[short] (15,13.25);
+\draw [ line width=0.6pt](8.75,13.25) to[short] (2.5,13.25);
+\draw [ line width=0.6pt](15,19.5) to[american current source,l={ \normalsize $5A$}] (15,13.25);
+\draw [ line width=0.6pt](2.5,13.25) to[american voltage source,l={ \normalsize $4V$}] (2.5,19.5);
+\end{circuitikz}
