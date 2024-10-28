@@ -1,32 +1,64 @@
+% \begin{circuitikz}[scale = 0.25]
+% \tikzstyle{every node}=[font=\normalsize]
+% \draw  (6.25,17) rectangle  node {\normalsize $G_1$} (15,13.25);
+% \draw  (6.25,10.75) rectangle  node {\normalsize $H$} (15,7);
+% \draw  (6.25,4.5) rectangle  node {\normalsize $G_2$} (15,0.75);
+% \draw (22.5,10.75) to[lamp] (22.5,7);
+% \draw [->, >=Stealth] (22.5,15.75) -- (22.5,9.25);
+% \draw [->, >=Stealth] (22.5,2) -- (22.5,8.5);
+% \draw (22.5,15.75) to[short] (15,15.75);
+% \draw (22.5,2) to[short] (15,2);
+% \draw [->, >=Stealth] (22.75,9) -- (24.75,9);
+% \draw [->, >=Stealth] (18.75,8.75) -- (15,8.75);
+% \draw (3.75,15.75) to[lamp] (1.25,15.75);
+% \draw (3.75,2) to[lamp] (1.25,2);
+% \draw [->, >=Stealth] (0,15.75) -- (2.25,15.75);
+% \draw [->, >=Stealth] (0,2) -- (2.25,2);
+% \draw (0,15.75) to[short] (0,2);
+% \draw (6.25,9) to[short] (2.5,9);
+% \draw [<->, >=Stealth] (2.5,15.5) -- (2.5,2.25);
+% \node [font=\normalsize] at (21.75,9.5) {$+$};
+% \node [font=\normalsize] at (21.5,8.25) {$+$};
+% \node [font=\normalsize] at (1.5,16) {$+$};
+% \node [font=\normalsize] at (1.5,1.75) {$+$};
+% \node [font=\normalsize] at (3.25,14.5) {$-$};
+% \node [font=\normalsize] at (2.75,3.25) {$-$};
+% \draw [->, >=Stealth] (2.75,2) -- (6.25,2);
+% \draw [->, >=Stealth] (3,15.75) -- (6.25,15.75);
+% \node [font=\normalsize] at (18.75,8.25) {$Y\brak{s}$};
+% \node [font=\normalsize] at (25,8.5) {$Y\brak{s}$};
+% \draw [->, >=Stealth] (-3.25,9) -- (0,9);
+% \node [font=\normalsize] at (-4,9.5) {$X\brak{s}$};
+% \end{circuitikz}
 \begin{circuitikz}[scale = 0.25]
-\tikzstyle{every node}=[font=\normalsize]
-\draw  (6.25,17) rectangle  node {\LARGE $G_1$} (15,13.25);
-\draw  (6.25,10.75) rectangle  node {\LARGE $H$} (15,7);
-\draw  (6.25,4.5) rectangle  node {\LARGE $G_2$} (15,0.75);
-\draw (22.5,10.75) to[lamp] (22.5,7);
-\draw [->, >=Stealth] (22.5,15.75) -- (22.5,9.25);
-\draw [->, >=Stealth] (22.5,2) -- (22.5,8.5);
-\draw (22.5,15.75) to[short] (15,15.75);
-\draw (22.5,2) to[short] (15,2);
-\draw [->, >=Stealth] (22.75,9) -- (24.75,9);
-\draw [->, >=Stealth] (18.75,8.75) -- (15,8.75);
-\draw (3.75,15.75) to[lamp] (1.25,15.75);
-\draw (3.75,2) to[lamp] (1.25,2);
-\draw [->, >=Stealth] (0,15.75) -- (2.25,15.75);
-\draw [->, >=Stealth] (0,2) -- (2.25,2);
-\draw (0,15.75) to[short] (0,2);
-\draw (6.25,9) to[short] (2.5,9);
-\draw [<->, >=Stealth] (2.5,15.5) -- (2.5,2.25);
-\node [font=\normalsize] at (21.75,9.5) {$+$};
-\node [font=\normalsize] at (21.5,8.25) {$+$};
-\node [font=\normalsize] at (1.5,16) {$+$};
-\node [font=\normalsize] at (1.5,1.75) {$+$};
-\node [font=\normalsize] at (3.25,14.5) {$-$};
-\node [font=\normalsize] at (2.75,3.25) {$-$};
-\draw [->, >=Stealth] (2.75,2) -- (6.25,2);
-\draw [->, >=Stealth] (3,15.75) -- (6.25,15.75);
-\node [font=\normalsize] at (18.75,8.25) {$Y\brak{s}$};
-\node [font=\normalsize] at (25,8.5) {$Y\brak{s}$};
-\draw [->, >=Stealth] (-3.25,9) -- (0,9);
-\node [font=\normalsize] at (-4,9.5) {$X\brak{s}$};
-\end{circuitikz}
+    \tikzstyle{every node}=[font=\normalsize]
+    \draw  (6.25,17) rectangle  node {\normalsize $G_1$} (15,13.25);
+    \draw  (6.25,10.75) rectangle  node {\normalsize $H$} (15,7);
+    \draw  (6.25,4.5) rectangle  node {\normalsize $G_2$} (15,0.75);
+    \draw (22.5,10.75) to[lamp] (22.5,7);
+    \draw [->, >=Stealth] (22.5,15.75) -- (22.5,10.50);
+    \draw [->, >=Stealth] (22.5,2) -- (22.5,7.25);
+    \draw (22.5,15.75) to[short] (15,15.75);
+    \draw (22.5,2) to[short] (15,2);
+    \draw [->, >=Stealth] (24.25,9) -- (26.75,9);
+    \draw [->, >=Stealth] (18.75,8.75) -- (15,8.75);
+    \draw (3.75,15.75) to[lamp] (1.25,15.75);
+    \draw (3.75,2) to[lamp] (1.25,2);
+    \draw [->, >=Stealth] (0,15.75) -- (1,15.75);
+    \draw [->, >=Stealth] (0,2) -- (1,2);
+    \draw (0,15.75) to[short] (0,2);
+    \draw (6.25,9) to[short] (2.5,9);
+    \draw [<->, >=Stealth] (2.5,14.25) -- (2.5,3.50);
+    \node [font=\normalsize] at (21.75,11.5) {$+$};
+    \node [font=\normalsize] at (21.75,6.25) {$+$};
+    \node [font=\normalsize] at (0.5,17) {$+$};
+    \node [font=\normalsize] at (0.5,1) {$+$};
+    \node [font=\normalsize] at (4.5,17) {$-$};
+    \node [font=\normalsize] at (4.5,1) {$-$};
+    \draw [->, >=Stealth] (4.35,2) -- (6.25,2);
+    \draw [->, >=Stealth] (4.35,15.75) -- (6.25,15.75);
+    \node [font=\normalsize] at (18.75,7.75) {$Y\brak{s}$};
+    \node [font=\normalsize] at (25.25,8) {$Y\brak{s}$};
+    \draw [->, >=Stealth] (-3.25,9) -- (0,9);
+    \node [font=\normalsize] at (-4,9.5) {$X\brak{s}$};
+    \end{circuitikz}
