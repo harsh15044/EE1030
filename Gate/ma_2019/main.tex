@@ -1,0 +1,164 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{MA - 2019}
+\author{AI24BTECH11015 - Harshvardhan Patidar}
+ \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    \item Let $1 \leq p < q < \infty$. Consider the followings statements: 
+        \begin{itemize}
+            \item [I.] $l^p \subset l^q$
+            \item [II.] $L^p \sbrak{0,1} \subset L^q\sbrak{0,1}$,
+        \end{itemize}
+
+        where $l^p = \cbrak{\brak{x_1,x_2, \ldots} : x_i \in \mathbb{R}, \sum_{i=1}^{\infty} \abs{x_i}^p < \infty}$ and 
+        \begin{align*}
+            L^p \sbrak{0,1} = \lcbrak{f:\sbrak{0,1} \rightarrow \mathbb{R}:f \text{ is } \mu-\text{measurable,} \vphantom{\int_{1}^{0}}} \\  \vphantom{\int_{1}^{0}} \rcbrak{\int_{\sbrak{0,1}} \abs{f}^p d \mu < \infty, \text{where } \mu \text{ is the Lebesgue measure}}
+        \end{align*}
+        $\brak{\mathbb{R} \text{ is the set of all real numbers}}$\\
+        Which of the following statements is/are TRUE?
+
+        \begin{enumerate}
+            \item Both I and II
+            \item I only
+            \item II only
+            \item Neither I nor II
+        \end{enumerate}
+
+        \item Consider the differential equation 
+            \begin{align*}
+                t \frac{d^2 y}{dt^2} + 2 \frac{dy}{dt} + ty = 0, t>0, y\brak{0+} = 1, \brak{\frac{dy}{dt}}_{t=0+} = 0
+            \end{align*}
+            If $Y\brak{s}$ is the Laplace transform of $y\brak{t}$, then the value of $Y\brak{1}$ is \_\_\_\_ (round off to $2$ places of decimal). \\
+            (Here, the inverse of trigonometric functions assume principal values only)
+
+    \item Let $R$ be the region in the $xy$-plane bounded by the curves $y = x^2$, $y=4x^2$, $xy=1$ and $xy=5$.\\ 
+            Then the value of the integral $\int \int_{R} \frac{y^2}{x} dy dx$ is equal to \_\_\_\_.
+
+    \item Let $V$ be the vector space of all $3 \times 3$ matrices with complex entries over the real field. If
+            \begin{align*}
+                W_1 = \cbrak{A \in V : A = \bar{A}^T} \text{ and } W_2 = \cbrak{A \in V : \text{trace of } A = 0},
+            \end{align*}
+            then the dimension of $W_1 + W_2$ is equal to \_\_\_\_.\\
+            ($\bar{A}^T$ denotes the conjugate transpose of $A$)
+
+    \item The number of elements of order $15$ in the additive group $\mathbb{Z}_{60} \times \mathbb{Z}_{50}$ is \_\_\_\_. \\
+            ($\mathbb{Z}_n$ denotes the group of integers modulo $n$, under the operation of addition modulo $n$, for any positive integer $n$)
+
+    \item Consider the following cost matrix of assigning four jobs to four persons:
+            \begin{table}[h!]
+                \centering
+                \input{tables/48.tex}
+                \caption{}
+                \label{{48t}}
+            \end{table}
+
+        Then the minimum cost of the assignment problem subject to the constraint that job J$_4$ is assigned to the person P$_2$, is \_\_\_\_.
+    
+    \item Let $y : \sbrak{-1,1} \rightarrow \mathbb{R}$ with $y\brak{1} = 1 $ satisfy the Legendre differential equation
+            \begin{align*}
+                \brak{1 - x^2} \frac{d^2 y}{d x ^2} - 2 x \frac{dy}{dx} + 6y = 0 \text{ for } \abs{x} < 1.
+            \end{align*}
+        Then the value of $\int_{-1}^1 y \brak{x} \brak{x+x^2}dx$ is equal to \_\_\_\_ (round off to 2 places of decimal).
+        
+    \item Let $\mathbb{Z}_{125}$ be the ring of integers modulo $125$ under the operations of addition modulo $125$ and multiplication modulo $125$. If $m$ is the number of maximal ideals of $\mathbb{Z}_{125}$ and $n$ is the number of non-units of $\mathbb{Z}_{125}$, then $m+n$ is equal to \_\_\_\_.
+
+    \item The maximum value of the error term of the composite Trapezoidal rule when it is used to evaluate the definite integral
+            \begin{align*}
+                \int_{0.2}^{1.4} \brak{\sin x - \log_e x} dx
+            \end{align*}
+        with $12$ sub-intervals of equal length, is equal to \_\_\_\_ (round off to $3$ places of decimal).
+
+    \item By the Simplex method, the optimal table of the linear programming problem:
+            \begin{align*}
+                \text{Maximize } &Z = \alpha x_1 + 3 x_2 \\
+                \text{subject to } &\beta x_1 + x_2 + x_3 = 8,\\
+                &2x_1 + x_2 + x_4 = \gamma \\
+                &x_1, x_2, x_3, x_4 \geq 0,
+            \end{align*}
+        where $\alpha, \beta, \gamma$ are real constants, is
+        \begin{table}[h!]
+            \centering
+            \input{tables/52.tex}
+            \caption{}
+            \label{{52t}}
+        \end{table}
+
+    Then the value of $\alpha + \beta + \gamma$ is \_\_\_\_.
+
+    \item Consider the inner product space $P_2$ of all polynomials of degree at most $2$ over the field of real numbers with the inner product $\langle f,g \rangle = \int_0^1 f \brak{t} g \brak{t} dt$ for $f,g \in P_2$. \\ Let $\cbrak{f_0, f_1, f_2}$ be an orthogonal set in $P_2$, where $f_0 = 1, f_1 = t+c_1, f_2 = t^2 + c_2 f_1 + c_3$ and $c_1,c_2,c_3$ are real constants. Then the value of $2c_1 + c_2 + 3 c_3$ is equal to \_\_\_\_.
+
+    \item Consider the system of linear differential equations
+        \begin{align*}
+            \frac{dx_1}{dt} = 5x_1 - 2x_2,\\
+            \frac{dx_2}{dt} = 4x_1 - x_2,
+        \end{align*}
+        with the initial conditions $x_1 \brak{0} = 0, x_2 \brak{0} =1$. \\ Then $\log_e \brak{x_2\brak{2} - x_1 \brak{2}}$ is equal to \_\_\_\_.
+
+    \item Consider the differential equation
+        \begin{align*}
+            x \brak{1 + x^2} \frac{d^2y}{dx^2} - 9\frac{dy}{dx} + 7y =0.
+        \end{align*}
+        The sum of the roots of the indicial equation of the Frobenius series solution for the above differential equation in a neighborhood of $x=0$ is equal to \_\_\_\_.
+
+
+\end{enumerate}
+
+
+  
+\end{document}
+
+
