@@ -1,0 +1,141 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{MA - 2021}
+\author{AI24BTECH11015 - Harshvardhan Patidar}
+ \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    \item Let $\langle \cdot, \cdot \rangle : \mathbb{R}^n \times \mathbb{R}^n \rightarrow \mathbb{R}$ be an inner product on the vector space $\mathbb{R}^n$ over $\mathbb{R}$. Consider the following statements:\\ P: $\abs{\langle u,v \rangle} \leq \frac{1}{2}\brak{\langle u,u \rangle + \langle v,v \rangle}$ for all $u,v \in \mathbb{R}^n$.\\Q: If $\langle u,v \rangle = \langle 2u,-v \rangle$ for all $v \in \mathbb{R}^n$, then $u=0$.\\Then
+        \begin{enumerate}
+            \item both P and Q are true
+            \item P is TRUE and Q is FALSE
+            \item P is FALSE and Q is TRUE
+            \item both P and Q is FALSE
+        \end{enumerate}
+
+    \subsection*{Q.\ref{44} - Q.\ref{55} Numerical Answer Type (NAT), carry TWO mark each (no negative marks).}
+    \item \label{44} Let $G$ be a group of order $5^4$ with center having $5^2$ elements. Then the number of conjugacy classes in $G$ is \_\_\_\_\_\_.
+    \item Let $F$ be a finite field and $F^{\times}$ be the group of all nonzero elements of $F$ under multiplication. If $F^{\times}$ has a subgroup of order $17$, then the smallest possible order of the field F is \_\_\_\_\_\_.
+    \item Let $R = \cbrak{z = x + iy \in \mathbb{C} : 0< x<1}$ and $-11 \pi < y < 11 \pi$ and $\Gamma$ be the positively oriented boundary of $R$. Then the value of the integral
+        \begin{align*}
+            \frac{1}{2 \pi i} \int_{\Gamma} \frac{e^z dz}{e^z - 2}
+        \end{align*}
+        is \_\_\_\_\_\_.
+
+    \item Let $D = \cbrak{z \in \mathbb{C} : \abs{z} < 2 \pi}$ and $f : D \rightarrow \mathbb{C}$ be the function defined by
+        \begin{align*}
+            f\brak{z} = 
+            \begin{cases}
+                \frac{3 z^2}{\brak{1 - \cos z}} &\text{ if } z \neq 0 \\
+                6 &\text{ if } z = 0
+            \end{cases}
+        \end{align*}
+        If $f\brak{z} = \sum_{n=0}^{\infty} a_n z^n$ for $z \in D$, then $6a_2=$\_\_\_\_\_\_.
+
+    \item The number of zeroes (counting multiplicity) of $P\brak{z} = 3z^5 + 2iz^2 + 7iz + 1$ in the annular region $\cbrak{z \in \mathbb{C} : 1<\abs{z}<7}$ is \_\_\_\_\_\_.
+
+    \item Let $A$ be a square matrix such that det$\brak{xI - A} = x^4\brak{x-1}^2 \brak{x-2}^3$, where det$\brak{M}$ denotes the determinant of a square matrix $M$. \\ If rank$\brak{A^2} <$ rank$\brak{A^3}=$ rank$\brak{A^4}$, then the geometric multiplicity of the eigenvalue $0$ of $A$ is \_\_\_\_\_\_.
+
+    \item If $y = \sum_{k=0}^{\infty} a_x x^k, \brak{a_0 \neq 0}$ is the power series solution of the differential equation $\frac{d^2y}{dx^2} - 24x^2y = 0$, then $\frac{a_4}{a_0} =$ \_\_\_\_\_\_.
+
+    \item If $u\brak{x,t} = A e^{-t} \sin x$ solves the following initial boundary value problem
+        \begin{align*}
+            \frac{\partial u}{\partial t} = \frac{\partial ^2 u}{\partial x^2}, 0<x<\pi, \text{   } &t>0,\\
+            u\brak{0,t} = u\brak{\pi,t} = 0, \text{   } &t>0,\\
+            u\brak{x,0} = 
+                \begin{cases}
+                    60, 0<x \leq \frac{pi}{2}, \\
+                    40, \frac{pi}{2} < x < \pi,
+                \end{cases}
+        \end{align*}
+        then $\pi A =$ \_\_\_\_.
+        
+    \item Let $V = \cbrak{p : p\brak{x} = a_0 + a_1 x + a_2 x^2, a_0, a_1, a_2 \in \mathbb{R}}$ be the vector space of all polynomials of degree at most $2$ over the real field $\mathbb{R}$. Let $T:V \rightarrow V$ be the linear operator given by
+        \begin{align*}
+            T\brak{p} = \brak{p\brak{0} - p\brak{1}} + \brak{p\brak{0} + p\brak{1}}x + p\brak{0}x^2.
+        \end{align*}
+        Then the sum of the eignevalues of $T$ is \_\_\_\_.
+
+    \item The quadrature formula
+        \begin{align*}
+            \int_0^2 x f \brak{x} dx \approx \alpha f \brak{0} + \beta f \brak{1} + \gamma f \brak{2}
+        \end{align*}
+        is exact for all polynomials of degree $\leq 2$. Then $2\beta - \gamma =$ \_\_\_\_.
+
+    \item For each $x \in \left( 0,1 \right] \rightarrow \mathbb{R}$ by $f\brak{x} = 0$ if $x$ is rational and $f\brak{x} = 18n$ if $x$ is irrational, where $n$ is the number of zeroes immediately after the decimal representation of $x$. Then the Lebesque integral $\int_0^1 f \brak{x} dx =$ \_\_\_\_/
+
+    \item \label{55} Let $\tilde{x} = \myvec{11/3 \\ 2/3 \\ 0}$ be an optimal solution of the following Linear Programming Problem $P:$
+        \begin{align*}
+            \text{Maximize} 4x_1 + x_2 - 3x_3
+        \end{align*}
+
+        subject to
+        \begin{align*}
+            2x_1 + 4x_2 + a x_3 \leq 10,\\
+            x_1 - x_2 + bx_3 \leq 3,\\
+            2x_1 + 3x_2 + 53x_3 \leq 11,\\
+            x_1 \geq 0, x_2 \geq 0 \text{ and } x_3 \geq 0, \text{ where } a,b \text{ are real numbers.}
+        \end{align*}
+
+        If $\tilde{y} = \myvec{p\\q\\r}$ is an optimal solution of the dual of $P$, then $p+q+r=$ \_\_\_\_. (round off to two decimal places.)
+\end{enumerate}
+
+
+
+  
+\end{document}
+
+
