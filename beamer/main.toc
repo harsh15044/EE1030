@@ -1,0 +1,9 @@
+\beamer@sectionintoc {2}{Problem}{3}{0}{1}
+\beamer@sectionintoc {3}{Solution}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Variables Used}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{General equation of a Conic in Matrix form}{5}{0}{2}
+\beamer@subsectionintoc {3}{3}{Parameters for given parabola}{6}{0}{2}
+\beamer@subsectionintoc {3}{4}{Matrix Parameters of given Parabola}{7}{0}{2}
+\beamer@subsectionintoc {3}{5}{Line Parameters}{8}{0}{2}
+\beamer@subsectionintoc {3}{6}{Points of Intersection}{9}{0}{2}
+\beamer@subsectionintoc {3}{7}{Calculating Area}{10}{0}{2}
