@@ -166,7 +166,7 @@ Find the area of the region included between $y^2 = 9x$ and $y=x$.
 \subsection{Parameters for given parabola}
 \begin{frame}
   \frametitle{Parameters for given parabola}
-  For the parabola $y = 9 x^2$, and,
+  For the parabola $y^2 = 9 x$, and,
   \begin{align}
     \text{directrix is} \myvec{-1&0}\vec{x} &= \frac{9}{4}\\
     \text{Focus } \vec{F} &= \myvec{\frac{9}{4}\\0}\\
@@ -247,15 +247,20 @@ Find the area of the region included between $y^2 = 9x$ and $y=x$.
 \begin{frame}[fragile,allowframebreaks]
   \frametitle{C code to produce data}
   \begin{mintedbox}{c}[break at=.8\textheight]
-    #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "libs/matfun.h"
+#include "libs/geofun.h"
 
-void horizontal_parabola_gen(FILE *fptr, double num_points) {
+void horizontal_parabola_gen(FILE *fptr, double a, double num_points, double ** vertex) {
+  double h = vertex[0][0];
+  double k = vertex[1][0];
+
     for (int i = 0; i <= num_points; i++) {
         double x = (11.0 * i) / num_points; // Scale x from 0 to 11
-        double y_pos = sqrt(9 * x); // Positive y value
-        double y_neg = -sqrt(9 * x); // Negative y value
+        double y_pos = k + sqrt(a * (x-h)); // Positive y value
+        double y_neg = k - sqrt(a * (x-h)); // Negative y value
 
         // Output the points for the upper and lower curves
         fprintf(fptr, "%lf,%lf\n", x, y_pos); // Upper
@@ -280,8 +285,7 @@ int main() {
     }
 
     double a = 9.0;  // For y^2 = 9x, we have 4a = 9, thus a = 9/4
-    //horizontal_parabola_gen(fptr, a, 1000, vertex);
-	horizontal_parabola_gen(fptr, 1000);
+	  horizontal_parabola_gen(fptr, a, 1000, vertex);
 
     fclose(fptr);
     freeMat(vertex, 2);  // Freeing the dynamically allocated memory

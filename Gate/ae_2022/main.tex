@@ -1,0 +1,154 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{AE - 2022}
+\author{AI24BTECH11015 - Harshvardhan Patidar}
+ \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    \item Consider a conventional subsonic fixed-wing airplane. $e$ is the Oswald efficiencyfactor and $AR$ is the aspect ratio. Corresponding to the minimum $\brak{\frac{C_D}{C_L^{3/2}}}$, which of the following relations is true?
+    \begin{enumerate}
+        \item $\frac{C_D}{C_L^2} = \frac{1}{\pi e A R}$
+        \item $\frac{C_D}{C_L^2} = \frac{4}{\pi e A R}$
+        \item $\frac{C_D}{C_L} = \frac{1}{\pi e A R}$
+        \item $\frac{C_D}{\sqrt{C_L}} = \frac{1}{\sqrt{\pi e A R}}$
+    \end{enumerate}
+
+
+    \item A horizontal load $F$ is applied at point R on a two-member truss, as shown in the figure. Both the members are prismatic with cross-sectional area, $A_0$, and made of the same material with Young's modulus $E$.\\The horizontal displacement of point R is:
+        \begin{figure}[H]
+            \centering
+            \input{figs/41.tex}
+            \caption{}
+            \label{41fig}
+        \end{figure}
+
+        \begin{enumerate}
+            \item $0$
+            \item $\frac{Fl}{E A_0}$
+            \item $\sqrt{2}\frac{Fl}{E A_0}$
+            \item $2\frac{Fl}{E A_0}$
+        \end{enumerate}
+
+    \item Which of the following is \textbf{NOT} always true for a combustion process taking place in a closed system?
+        \begin{enumerate}
+            \item Total number of atoms is conserved
+            \item Total number of molecules is conserved
+            \item Total number of atoms of each element is conserved
+            \item Total mass is conserved
+        \end{enumerate}
+
+    \item The real function $y = \sin ^2 \brak{\abs{x}}$ is
+        \begin{enumerate}
+            \item continuous for all $x$
+            \item differentiable for all $x$
+            \item not continuous at $x=0$
+            \item not differentiable at $x=0$
+        \end{enumerate}
+
+    \item A convergent nozzle fed from a constant pressure, constant temperature reservoir, is discharging air to atmosphere at $1$ bar (absolute) with choked flow at the exit (marked as $Q$)\\Flow through the nozzle can be assumed to be isentropic.\\If the exit area of the nozzle is increased while all the reservoir parameters and ambient conditions remain the same, then at steady state
+        \begin{figure}[H]
+            \centering
+            \input{figs/44.tex}
+            \caption{}
+            \label{44fig}
+        \end{figure}
+
+        \begin{enumerate}
+            \item the nozzle will remain choked
+            \item the nozzle will be un-choked
+            \item the Mach number at section P will increase
+            \item the Mach number at section P will decrease
+        \end{enumerate}
+
+    \item For a conventional airplane in straight, level, constant velocity flight condition, which of the following condition(s) is/are possible on Euler angles $\brak{\phi, \theta, \psi}$, angle of attack $\brak{\alpha}$ and the sideslip angle $\brak{\beta}$?
+        \begin{enumerate}
+            \item $\phi = 0^{\degree}, \theta = 2^{\degree}, \psi = 0^{\degree}, \alpha = 2^{\degree}, \beta = 0^{\degree}$
+            \item $\phi = 5^{\degree}, \theta = 0^{\degree}, \psi = 0^{\degree}, \alpha = 2^{\degree}, \beta = 0^{\degree}$
+            \item $\phi = 0^{\degree}, \theta = 3^{\degree}, \psi = 0^{\degree}, \alpha = 3^{\degree}, \beta = 5^{\degree}$
+            \item $\phi = 0^{\degree}, \theta = 5^{\degree}, \psi = 0^{\degree}, \alpha = 2^{\degree}, \beta = 5^{\degree}$
+        \end{enumerate}
+
+    \item Consider a high Earth-orbiting satellite of angular momentum per unit mass $\overrightarrow{h}$ and eccentricity $e$.\\The mass of the Earth is $M$ and $G$ is the universal gravitational constant.\\The distance between satellite's center of mass and the Earth's center of mass is $r$, the true anomaly is $\theta$, and the phase angle is zero.\\Which of the following statements is/are true?
+        \begin{enumerate}
+            \item The trajectory equation is $r = r\brak{\theta} = \frac{\abs{\overrightarrow{h}}}{GM \brak{1+ e \cos \theta}}$
+            \item The trajectory equation is $r = r\brak{\theta} = \frac{\abs{\overrightarrow{h}^2}}{GM \brak{1+ e \cos \theta}}$
+            \item $\overrightarrow{h}$ is conserved
+            \item The sum of potential energy and kinetic energy of the satellite is conserved
+        \end{enumerate}
+
+        \item A rocket operates at an absolute chamber pressure of $20$ bar to produce thrust, $F_1$.\\The hot exhaust is optimally expanded to $1$ bar (absolute pressure) using a convergent-divergent nozzle with exit to throat area ratio $\brak{\frac{A_e}{A_t}}$ of $3.5$ and thrus coefficient, $C_{F,1}=1.42$.\\The same rocket when operated at an absolute chamber pressure of $50$ bar produces thrust $F_2$ and the thrust coefficient is $C_{F,2}$.\\Which of the following statements(s) is/are correct?
+            \begin{enumerate}
+                \item $\frac{F_2}{F_1} = 2.5$
+                \item $\frac{F_2}{F_1} > 2.5$
+                \item $\frac{C_{F,2}}{C_{F,1}} = 1$
+                \item $\frac{C_{F,2}}{C_{F,1}} > 1$
+            \end{enumerate}
+
+        \item $\overrightarrow{v} = x^3 \hat{i} + y^3 \hat{j} + z^3 \hat{k}$ is a vector field where $\hat{i},\hat{j},\hat{k}$ are the base vectors of a cartesian coordinate system.\\Using the Gauss divergence theorem, the value of the outward flux of the vector field over the surface of a sphere of unit radius centered at the origin is \_\_\_\_\_ (rounded off to one decimal place).
+
+        \item The largest eigenvalue of the given matrix is \_\_\_\_\_\_.
+            \begin{align*}
+                \myvec{0&1&1\\1&0&1\\1&1&0}
+            \end{align*}
+
+        \item A rotational velocity field in air flow is given as $\overrightarrow{V} = ay\hat{i} + bx\hat{j}$, with $a=10 s^{-1},b=20 s^{-1}$.\\The air density is $1.0 kg/m^3$ and the pressure at $\brak{x,y} = \brak{0m, 0m}$ is 
+\end{enumerate}
+
+
+  
+\end{document}
+
+
