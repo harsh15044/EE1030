@@ -1,5 +1,3 @@
-\frametitle{Python code to Plot curves}
-  \begin{mintedbox}{Python}[break at=.8\textheight]
     import sys  # for path to external scripts
 sys.path.insert(0, '/Users/hanumac/Desktop/github/matgeo/codes/coordgeo')  # path to my scripts
 import numpy as np
@@ -74,4 +72,3 @@ plt.title("Parabola $y^2 = 9x$ and line $y=x$")
 plt.grid(True)
 plt.legend()
 plt.show()
-  \end{mintedbox}

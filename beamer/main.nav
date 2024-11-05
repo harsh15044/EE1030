@@ -41,8 +41,22 @@
 \headcommand {\beamer@subsectionentry {0}{3}{7}{10}{Calculating Area}}
 \headcommand {\slideentry {3}{7}{1}{10/10}{Calculating Area}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@partpages {1}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@sectionpages {4}{10}}
-\headcommand {\beamer@documentpages {10}}
-\headcommand {\gdef \inserttotalframenumber {10}}
+\headcommand {\slideentry {3}{7}{2}{11/11}{Calculating Area}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {3}{7}{3}{12/12}{Calculating Area}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {3}{7}{3}{12/13}{Calculating Area}{0}}
+\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\slideentry {3}{7}{4}{14/14}{Calculating Area}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{7}{4}{14/15}{Calculating Area}{0}}
+\headcommand {\beamer@framepages {14}{15}}
+\headcommand {\slideentry {3}{7}{4}{14/16}{Calculating Area}{0}}
+\headcommand {\beamer@framepages {14}{16}}
+\headcommand {\slideentry {3}{7}{4}{14/17}{Calculating Area}{0}}
+\headcommand {\beamer@framepages {14}{17}}
+\headcommand {\beamer@partpages {1}{17}}
+\headcommand {\beamer@subsectionpages {10}{17}}
+\headcommand {\beamer@sectionpages {4}{17}}
+\headcommand {\beamer@documentpages {17}}
+\headcommand {\gdef \inserttotalframenumber {17}}
