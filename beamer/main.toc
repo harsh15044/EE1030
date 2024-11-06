@@ -7,3 +7,7 @@
 \beamer@subsectionintoc {3}{5}{Line Parameters}{8}{0}{2}
 \beamer@subsectionintoc {3}{6}{Points of Intersection}{9}{0}{2}
 \beamer@subsectionintoc {3}{7}{Calculating Area}{10}{0}{2}
+\beamer@sectionintoc {4}{Plot}{11}{0}{3}
+\beamer@sectionintoc {5}{Codes}{12}{0}{4}
+\beamer@subsectionintoc {5}{1}{C code}{12}{0}{4}
+\beamer@subsectionintoc {5}{2}{Python Code}{15}{0}{4}
