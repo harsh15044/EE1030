@@ -1,0 +1,21 @@
+\begin{circuitikz}[scale = 0.25]
+    \tikzstyle{every node}=[font=\normalsize]
+    \draw [ color={rgb,255:red,255; green,255; blue,255} , fill={rgb,255:red,209; green,209; blue,209}, line width=1.4pt ] (-1,18.5) rectangle (14,-2.5);
+    \draw [line width=1.4pt, short] (-1,18.5) -- (-1,-2.5);
+    \draw [line width=1.4pt, short] (-1,-2.5) -- (14,-2.5);
+    \draw [line width=1.4pt, short] (14,-2.5) -- (14,18.5);
+    \draw [ fill={rgb,255:red,150; green,150; blue,150} , line width=1.4pt ] (1,18.5) rectangle (12,-0.75);
+    \draw [ color={rgb,255:red,255; green,255; blue,255}, line width=1.4pt, dashed] (6.5,18.5) -- (6.5,-0.5);
+    \draw [short] (-1,18.5) -- (-3,18.5);
+    \draw [short] (-1,-0.5) -- (-3,-0.5);
+    \draw [<->, >=Stealth] (-2,18.5) -- (-2,-0.5);
+    \draw [->, >=Stealth] (2,-4.5) -- (1,-2.5);
+    \node [font=\normalsize] at (6.25,-5) {Stationary Cylinder};
+    \node [font=\normalsize] at (-3.5,8.75) {$2m$};
+    \draw [->, >=Stealth] (16,10.5) -- (14,10.5);
+    \node [font=\normalsize] at (16,9.5) {$5mm$};
+    \draw [ color={rgb,255:red,255; green,255; blue,255}, <->, >=Stealth] (6.5,7.5) -- (12,7.5);
+    \node [font=\normalsize, color={rgb,255:red,255; green,255; blue,255}] at (8.75,6.75) {$1m$};
+    \draw [ color={rgb,255:red,255; green,255; blue,255}, ->, >=Stealth] (10.25,10.5) -- (12,10.5);
+    \draw [ color={rgb,255:red,255; green,255; blue,255}, ->, >=Stealth] (4,17) .. controls (6.25,15.25) and (6.75,15.25) .. (9,17) ;
+    \end{circuitikz}
