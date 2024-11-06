@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  6 NOV 2024 00:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  6 NOV 2024 14:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1623,22 +1623,22 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 [10
 
 ]
-<figs/fig.png, id=141, 419.8887pt x 508.0581pt>
+<figs/fig.png, id=158, 419.8887pt x 508.0581pt>
 File: figs/fig.png Graphic file (type png)
 <use figs/fig.png>
-Package pdftex.def Info: figs/fig.png  used on input line 245.
+Package pdftex.def Info: figs/fig.png  used on input line 246.
 (pdftex.def)             Requested size: 171.14764pt x 207.08804pt.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 245.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 246.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 245.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 246.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 245.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 246.
 
 
-Overfull \vbox (4.48155pt too high) detected at line 245
+Overfull \vbox (4.48155pt too high) detected at line 246
  []
 
 [11
@@ -1651,11 +1651,6 @@ Overfull \vbox (4.48155pt too high) detected at line 245
 \openout8 = `main.listing'.
 
  (./_minted-main/default.pygstyle)
-runsystem(pygmentize -l 'c' -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl='False' -F gobble:n='0' -o _minted-main/2CCE16E66E02D3B011E829604F78BE32C89
-F7AE7C8039ED61D94BD00560779A0.pygtex main.listing)...executed.
-
-
 (./_minted-main/2CCE16E66E02D3B011E829604F78BE32C89F7AE7C8039ED61D94BD00560779A
 0.pygtex
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
@@ -1697,22 +1692,19 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
 \tf@snm=\write11
 \openout11 = `main.snm'.
 
-runsystem(rm _minted-main/CDF97ABBFA9335F384844804BF391B36C89F7AE7C8039ED61D94B
-D00560779A0.pygtex)...executed.
-
  (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 478A76A76736D4D756A446430EDF6C66;1562.
+(rerunfilecheck)             Checksum: 7F8800F3D2CD5A5B2566B1F2DAEA09A8;1904.
  ) 
 Here is how much of TeX's memory you used:
- 36831 strings out of 474116
- 769981 string characters out of 5732613
+ 36846 strings out of 474116
+ 769892 string characters out of 5732613
  1955187 words of memory out of 5000000
- 58426 multiletter control sequences out of 15000+600000
+ 58437 multiletter control sequences out of 15000+600000
  571481 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,131p,627b,1270s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1737,10 +1729,10 @@ hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/homebrew/Cellar/
 texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmtt8.pfb>
-Output written on main.pdf (18 pages, 212886 bytes).
+Output written on main.pdf (18 pages, 213158 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -41,24 +41,34 @@
 \headcommand {\beamer@subsectionentry {0}{3}{7}{10}{Calculating Area}}
 \headcommand {\slideentry {3}{7}{1}{10/10}{Calculating Area}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{7}{2}{11/11}{Calculating Area}{0}}
+\headcommand {\beamer@sectionpages {4}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\sectionentry {4}{Plot}{11}{Plot}{0}}
+\headcommand {\slideentry {4}{0}{1}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{7}{3}{12/12}{Calculating Area}{0}}
+\headcommand {\beamer@sectionpages {11}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\sectionentry {5}{Codes}{12}{Codes}{0}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{12}{C code}}
+\headcommand {\slideentry {5}{1}{1}{12/12}{C code}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {3}{7}{3}{12/13}{Calculating Area}{0}}
+\headcommand {\slideentry {5}{1}{1}{12/13}{C code}{0}}
 \headcommand {\beamer@framepages {12}{13}}
-\headcommand {\slideentry {3}{7}{3}{12/14}{Calculating Area}{0}}
+\headcommand {\slideentry {5}{1}{1}{12/14}{C code}{0}}
 \headcommand {\beamer@framepages {12}{14}}
-\headcommand {\slideentry {3}{7}{4}{15/15}{Calculating Area}{0}}
+\headcommand {\beamer@subsectionpages {12}{14}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{15}{Python Code}}
+\headcommand {\slideentry {5}{2}{1}{15/15}{Python Code}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {3}{7}{4}{15/16}{Calculating Area}{0}}
+\headcommand {\slideentry {5}{2}{1}{15/16}{Python Code}{0}}
 \headcommand {\beamer@framepages {15}{16}}
-\headcommand {\slideentry {3}{7}{4}{15/17}{Calculating Area}{0}}
+\headcommand {\slideentry {5}{2}{1}{15/17}{Python Code}{0}}
 \headcommand {\beamer@framepages {15}{17}}
-\headcommand {\slideentry {3}{7}{4}{15/18}{Calculating Area}{0}}
+\headcommand {\slideentry {5}{2}{1}{15/18}{Python Code}{0}}
 \headcommand {\beamer@framepages {15}{18}}
 \headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@subsectionpages {10}{18}}
-\headcommand {\beamer@sectionpages {4}{18}}
+\headcommand {\beamer@subsectionpages {15}{18}}
+\headcommand {\beamer@sectionpages {12}{18}}
 \headcommand {\beamer@documentpages {18}}
 \headcommand {\gdef \inserttotalframenumber {18}}
