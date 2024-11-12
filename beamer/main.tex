@@ -262,8 +262,8 @@ void horizontal_parabola_gen(FILE *fptr, double a, double num_points, double ** 
 
     for (int i = 0; i <= num_points; i++) {
         double x = (11.0 * i) / num_points; // Scale x from 0 to 11
-        double y_pos = k + sqrt(a * (x-h)); // Positive y value
-        double y_neg = k - sqrt(a * (x-h)); // Negative y value
+        double y_pos = k + sqrt(4 * a * (x-h)); // Positive y value
+        double y_neg = k - sqrt(4 * a * (x-h)); // Negative y value
 
         // Output the points for the upper and lower curves
         fprintf(fptr, "%lf,%lf\n", x, y_pos); // Upper
@@ -287,7 +287,7 @@ int main() {
         return 1;
     }
 
-    double a = 9.0;  // For y^2 = 9x, we have 4a = 9, thus a = 9/4
+    double a = 9.0/4.0;  // For y^2 = 9x, we have 4a = 9, thus a = 9/4
 	  horizontal_parabola_gen(fptr, a, 1000, vertex);
 
     fclose(fptr);
@@ -301,7 +301,7 @@ int main() {
 \begin{frame}[fragile,allowframebreaks]
   \frametitle{Python code to Plot curves}
   \begin{mintedbox}{Python}[break at=.8\textheight]
-    import sys  # for path to external scripts
+import sys  # for path to external scripts
 sys.path.insert(0, '/Users/hanumac/Desktop/github/matgeo/codes/coordgeo')  # path to my scripts
 import numpy as np
 import numpy.linalg as LA
@@ -334,7 +334,7 @@ m = np.array(([1, 1])).reshape(-1, 1)  # direction vector of line
 # generate line points
 line_points = line_dir_pt(m, A.reshape(-1, 1), 10, -3)
 
-# Plot the positive and negative branches separately
+# Plot
 plt.figure()
 
 # Plot the positive branch of the parabola

@@ -1,4 +1,4 @@
-    import sys  # for path to external scripts
+import sys  # for path to external scripts
 sys.path.insert(0, '/Users/hanumac/Desktop/github/matgeo/codes/coordgeo')  # path to my scripts
 import numpy as np
 import numpy.linalg as LA
@@ -31,7 +31,7 @@ m = np.array(([1, 1])).reshape(-1, 1)  # direction vector of line
 # generate line points
 line_points = line_dir_pt(m, A.reshape(-1, 1), 10, -3)
 
-# Plot the positive and negative branches separately
+# Plot
 plt.figure()
 
 # Plot the positive branch of the parabola

@@ -1,5 +1,5 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-    \PYG{k+kn}{import} \PYG{n+nn}{sys}  \PYG{c+c1}{\PYGZsh{} for path to external scripts}
+\PYG{k+kn}{import} \PYG{n+nn}{sys}  \PYG{c+c1}{\PYGZsh{} for path to external scripts}
 \PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}/Users/hanumac/Desktop/github/matgeo/codes/coordgeo\PYGZsq{}}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} path to my scripts}
 \PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
 \PYG{k+kn}{import} \PYG{n+nn}{numpy.linalg} \PYG{k}{as} \PYG{n+nn}{LA}
@@ -32,7 +32,7 @@
 \PYG{c+c1}{\PYGZsh{} generate line points}
 \PYG{n}{line\PYGZus{}points} \PYG{o}{=} \PYG{n}{line\PYGZus{}dir\PYGZus{}pt}\PYG{p}{(}\PYG{n}{m}\PYG{p}{,} \PYG{n}{A}\PYG{o}{.}\PYG{n}{reshape}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{),} \PYG{l+m+mi}{10}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}\PYG{p}{)}
 
-\PYG{c+c1}{\PYGZsh{} Plot the positive and negative branches separately}
+\PYG{c+c1}{\PYGZsh{} Plot}
 \PYG{n}{plt}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{()}
 
 \PYG{c+c1}{\PYGZsh{} Plot the positive branch of the parabola}
