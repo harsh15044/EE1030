@@ -37,7 +37,7 @@
 \PYG{+w}{    }\PYG{p}{\PYGZcb{}}
 
 \PYG{+w}{    }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{9.0}\PYG{o}{/}\PYG{l+m+mf}{4.0}\PYG{p}{;}\PYG{+w}{  }\PYG{c+c1}{// For y\PYGZca{}2 = 9x, we have 4a = 9, thus a = 9/4}
-\PYG{+w}{	  }\PYG{n}{horizontal\PYGZus{}parabola\PYGZus{}gen}\PYG{p}{(}\PYG{n}{fptr}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1000}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{vertex}\PYG{p}{);}
+\PYG{+w}{    }\PYG{n}{horizontal\PYGZus{}parabola\PYGZus{}gen}\PYG{p}{(}\PYG{n}{fptr}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1000}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{vertex}\PYG{p}{);}
 
 \PYG{+w}{    }\PYG{n}{fclose}\PYG{p}{(}\PYG{n}{fptr}\PYG{p}{);}
 \PYG{+w}{    }\PYG{n}{freeMat}\PYG{p}{(}\PYG{n}{vertex}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{);}\PYG{+w}{  }\PYG{c+c1}{// Freeing the dynamically allocated memory}

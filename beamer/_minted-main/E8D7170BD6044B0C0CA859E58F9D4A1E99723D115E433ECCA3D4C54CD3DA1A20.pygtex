@@ -1,6 +1,6 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{k+kn}{import} \PYG{n+nn}{sys}  \PYG{c+c1}{\PYGZsh{} for path to external scripts}
-\PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}/Users/hanumac/Desktop/github/matgeo/codes/coordgeo\PYGZsq{}}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} path to my scripts}
+\PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}/Users/hanumac/Desktop/github/matgeo/codes/coordgeo\PYGZsq{}}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} path to GVV Sir\PYGZsq{}s scripts}
 \PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
 \PYG{k+kn}{import} \PYG{n+nn}{numpy.linalg} \PYG{k}{as} \PYG{n+nn}{LA}
 \PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k}{as} \PYG{n+nn}{plt}

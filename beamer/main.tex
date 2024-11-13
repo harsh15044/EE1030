@@ -288,7 +288,7 @@ int main() {
     }
 
     double a = 9.0/4.0;  // For y^2 = 9x, we have 4a = 9, thus a = 9/4
-	  horizontal_parabola_gen(fptr, a, 1000, vertex);
+    horizontal_parabola_gen(fptr, a, 1000, vertex);
 
     fclose(fptr);
     freeMat(vertex, 2);  // Freeing the dynamically allocated memory
@@ -302,7 +302,7 @@ int main() {
   \frametitle{Python code to Plot curves}
   \begin{mintedbox}{Python}[break at=.8\textheight]
 import sys  # for path to external scripts
-sys.path.insert(0, '/Users/hanumac/Desktop/github/matgeo/codes/coordgeo')  # path to my scripts
+sys.path.insert(0, '/Users/hanumac/Desktop/github/matgeo/codes/coordgeo')  # path to GVV Sir's scripts
 import numpy as np
 import numpy.linalg as LA
 import matplotlib.pyplot as plt
