@@ -17,6 +17,6 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Givens Rotations}{7}{subsubsection.3.1.3}%
 \contentsline {paragraph}{Steps:}{7}{section*.7}%
 \contentsline {subsection}{\numberline {3.2}Implementation}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Handling Complex Eigenvalues in the case of Real Entries:}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Handling Complex Eigenvalues in the case of Real Entries:}{8}{subsection.3.3}%
 \contentsline {paragraph}{}{8}{section*.8}%
 \contentsline {section}{\numberline {4}Conclusion}{8}{section.4}%

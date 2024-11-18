@@ -39,6 +39,8 @@
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{lipsum}
+\usepackage{listings}
+
 
 
 
@@ -48,6 +50,12 @@
 
 \title{Report\\Software Assignment : Eigenvalue Calculation}
 
+\lstset{ 
+    backgroundcolor=\color{lightgray},   
+    basicstyle=\footnotesize\ttfamily,    
+    breaklines=true,                     
+    captionpos=b,
+}
 
 % The \author macro works with any number of authors. There are two commands
 % used to separate the names and addresses of multiple authors: \And and \AND.
@@ -358,7 +366,10 @@ In this method, we zero out the elements below the diagonal by applying sequence
 This method is numerically very stable. This method is only suitable for sparse matrices, as it only modifies two elements at a time. But for denser matrices, it may be computationally expensive as it would require a very large number of rotations.
 
 \subsection{Implementation}
-To implement my Eigenvalue calculating software, i am using C as my low level language for programming it. Here is an outline of my implementation.
+To implement my Eigenvalue calculating software, i am using C as my low level language for programming it. The code can be accessed at
+    \begin{lstlisting}
+        codes/main.c
+    \end{lstlisting} Here is an outline of my implementation.
 \begin{enumerate}
     \item \textbf{Matrix Struct: } I have implemented a struct consisting of two elements. One stores the size of the matrix, and the other is a double pointer, which allows me to effectively store the matrix.
     \item \textbf{Complex Data types:} I have used the \texttt{complex.h} library for handling complex entries. Every where i have used \texttt{long double} for precision and accuracy.
