@@ -380,7 +380,7 @@ To implement my Eigenvalue calculating software, i am using C as my low level la
 \end{enumerate}
 
 \subsection{Handling Complex Eigenvalues in the case of Real Entries:} \cite{libretexts}
-In the case of real matrices, eigenvalues re not always guaranteed to be real numbers. In such cases only printing the diagonal elements is incorrect. It is essential to handle such cases.
+In the case of real matrices, eigenvalues are not always guaranteed to be real numbers. In such cases only printing the diagonal elements is incorrect. It is essential to handle such cases.
 \paragraph{} To address this issue is the specific reason for implementing the \texttt{printEigenvalues()} function. In such cases the QR algorithm transforms the original matrix into a Block Diagonalizable matrix. The \texttt{printEigenvalues()} function then goes through all such $2\times2$ blocks and prints their eigenvalues by calculating by direct method (which is quite simple for a $2\times2$ matrix. This way this function handles the case when there are real entries but complex eigenvalues.
 
 \section{Conclusion}
