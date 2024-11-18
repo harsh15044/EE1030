@@ -1,0 +1,393 @@
+\documentclass{article}
+
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2024
+
+
+% ready for submission
+% \usepackage[final]{neurips_2024}
+
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+    \usepackage[preprint]{neurips_2024}
+
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%    \usepackage[final]{neurips_2024}
+
+
+% to avoid loading the natbib package, add option nonatbib:
+%    \usepackage[nonatbib]{neurips_2024}
+
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage{multicol}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+
+
+\definecolor{mygreen}{RGB}{28,130,0}
+\newcommand{\theTitle}{Software Assignment: Eigenvalue Calculation}  % Title of the thesis
+\newcommand{\theAuthor}{AI24BTECH11015 - Harshvardhan Patidar} 
+
+\title{Report\\Software Assignment : Eigenvalue Calculation}
+
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+\author{Harshvardhan Patidar\\
+  Department of Artificial Intelligence\\
+  Indian Institute of Technology Hyderabad\\
+  \texttt{ai24btech11015@iith.ac.in}
+  % example of co authors
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+}
+
+
+\begin{document}
+
+\begin{titlepage}
+\pagestyle{empty}
+\centering
+\includegraphics[width=0.8\textwidth]{images/horzlogolong.png}
+\vspace{60mm}
+\hrule\vspace{2mm}
+{\LARGE \textbf{\textcolor{mygreen}{Report}}}\\[8pt]
+{\LARGE \textbf{\textcolor{mygreen}{\theTitle}}} \\  % Thesis title
+\vspace{5mm}\hrule\vspace{20mm}
+{\large \theAuthor} \\[5pt]  % Author name
+{\large Department of Artificial Intelligence}
+\vfill                % Fill the remaining space
+{\normalsize Indian Institute of Technology, Hyderabad \\[4pt]\today} 
+\end{titlepage}
+
+
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{What are Eigenvalues?}\cite{youtubeeig}
+For a $n \times n$ matrix, multiplying it, or simply applying the matrix to a $n \times 1$ vector gives a transformed vector. If the transformed vector is a scalar multiple of the original vector, then that vector is called an eigenvector of the matrix and the scalar is called an eigenvalue of the matrix. Let $A$ be a square matrix of order $n$, and $$A \vec{v} = \lambda \vec{v},$$ then $\lambda$ is an eigenvalue of the matrix $A$ corresponding to the eigenvector $\vec{v}$. The simplest way to calculate the eigenvalues of a matrix is to solve $$|A -\lambda I| = 0$$ to get all the eigenvalues.
+
+\section{Algorithms to calculate Eigenvalues} \cite{Wikipedia}
+There are lots of algorithms already discovered to calculate the eigenvalues of a given matrix. Let's discuss some of them : 
+
+
+\subsection{Lanczos Algorithm}
+It is an iterative algorithm that calculates the $m$ most useful eigenvalues of a matrix. It does so by using the Krylov Subspaces. It creates a smaller matrix that approximates the original matrix's eigenvalues. Its time complexity is $\mathcal{O}(n^2k)$ where $n$ is the order of the matrix and $k$ is the number of iterations.
+
+\begin{algorithm}[H]
+    \setstretch{1.3}
+    \caption{Lanczos Algorithm}
+    \begin{algorithmic}[1]
+    \Statex Given: Hermitian Matrix $A$, initial vector $v_0$, iterations $k$
+    \State Normalize $v_0$ : $v_1$ = $v_0$ / $||v_0||$
+    \State Take $w_1 = Av_1 - v_1^*Av_1$ 
+    \For{$i=2$ to $k$}
+        \State Let $\beta_j = ||w_{j-1}||$
+        \If{$\beta_j \neq 0$}
+            \State $v_j = w_{j-1} / \beta_j$
+        \Else
+            \State pick $v_j$ as an arbitrary vector such that $||v_j|| =1$ and is orthogonal to $v_1, \ldots, v_{j-1}$
+        \EndIf
+        \State $w_j^{\prime}= Av_1$
+        \State $\alpha_j = w_j^{\prime*} v_j$
+        \State $w_j = w_j^{\prime} - \alpha_jv_j - \beta_j v_{j-1}$
+    \EndFor
+    \State Let $V$ be matrix with columns $v_1, \ldots, v_m$. T = 
+    $\begin{bmatrix}
+        \alpha_1 & \beta_2  & & & & 0 \\
+        \beta_2 & \alpha_2 & \beta_3 &&&\\
+        &\beta_3&\alpha_3&\ddots&&\\
+        &&\ddots&\ddots&\beta_{m-1}&\\
+        &&&\beta_{m-1}&\alpha_{m-1}&\beta_m\\
+        0&&&&\beta_k&\alpha_m
+    \end{bmatrix}$
+    \State If $\lambda$ is an eigenvalue of $T$ with $x$ as eigenvector, then $\lambda$ is also an eigenvalue of $A$ with eigenvector as $y = Vx$.
+    
+    \end{algorithmic}
+\end{algorithm}
+\begin{multicols}{2}
+\begin{center}\textbf{Pros}\end{center}
+It is greatly efficient for large sparse matrices, i.e. the matrices with many of the entries as zero. It's convergence time is also low, causing it to quickly converge to the eigenvalues.
+\columnbreak
+\begin{center}\textbf{Cons}\end{center}
+It lacks numerical stability. The vectors on which it is working may become less accurate over time. Thus adding extra steps to restore their accuracy, and decreasing the efficiency.
+\end{multicols}
+
+
+\subsection{Power Iteration}
+This is also an iterative algorithm which approximates the numerically largest eigenvalues. The higher is the number of iterations better is the convergence. Its time complexity is $\mathcal{O}(n^2)$ where $n$ is the order of the matrix.
+\begin{algorithm}[H]
+\setstretch{1.3}
+\caption{Power Iteration}
+\begin{algorithmic}[1]
+    \Statex Given Matrix $A$, max iterations $k$, tolerance $\epsilon$
+    \State Let $v_0$ be an arbitrary vector such that $||v_0|| = 1$
+    \For{$i=1$ to $k$}
+        \State Calculate $\displaystyle v_i = \frac{Av_{i-1}}{||Av_{i-1||}}$
+
+        \If{$||Av_{i-1} - Av_i|| < \epsilon$}
+            \State Break.
+        \EndIf
+    \EndFor
+    \State Compute $\displaystyle \lambda = \frac{v^{\top} A v}{v^{\top} v}$
+
+\end{algorithmic}
+\end{algorithm}
+
+\begin{multicols}{2}
+\begin{center}\textbf{Pros}\end{center}
+\begin{itemize}
+    \item Efficient to find the dominant eigenvalue. Low memory requirements. Fast convergence for matrices with well separated dominant eigenvalue.
+    \item Easy to implement. Can be parallelized easily to make it faster. Remains same for all types of matrices.
+\end{itemize}
+\columnbreak
+\begin{center}\textbf{Cons}\end{center}
+\begin{itemize}
+    \item If there are multiple dominant eigenvalues, it may not converge to a unique eigenvector.
+    \item Doesn't find the other eigenvalues.
+    \item Convergence depends upon the choice of initial vector $v_0$.
+\end{itemize}
+\end{multicols}
+
+\subsection{Jacobi Method}
+This algorithm is a solid choice for calculating the eigenvalues of a symmetric matrix. It applies rotations to the matrix iteratively, leading to the eigenvalues and the eigenvectors. Its time complexity is $\mathcal{O}(n^3)$ per iteration.
+
+\begin{algorithm}[H]
+    \setstretch{1.3}
+    \caption{Jacobi Method}
+    \begin{algorithmic}[1]
+        \Statex Given Symmetric matrix $A$, tolerance $\epsilon$, max iterations $k$, $a_{p,q}$ denotes $A[p][q]$
+        \State Initialize $V$ as identity matrix of same order as $A$
+        \Repeat
+            \State take $a_{p,q}=$ largest element in $A$
+            \If{$a_{p,q}<\epsilon$}             \State Break (converged)
+            \EndIf
+            \State Calculate rotation angle $\theta$ 
+            \Statex \hspace{1cm}  $\tan(2\theta) = \frac{2a_{p,q}}{a_{p,p} - a_{q,q}}$
+
+            \State Calculate the rotation matrix $P$ such that
+            \Statex \hspace{1cm}  $p_{p,p} = \cos \theta , \; p_{q,q} = \cos \theta$
+            \Statex \hspace{1cm}   $p_{p,q} = -\sin \theta , \; p_{q,p} = \sin \theta$
+
+            \State Update $A$ and $V$ using $P$
+            \Statex \hspace{1cm} $A = P^{\top} AP$
+            \Statex \hspace{1cm} $V = VP$
+        \Until{convergence or max iterations}
+    \State Output:
+        \Statex \hspace{1cm} Diagonal elements of $A$ are the eigenvalues
+        \Statex \hspace{1cm} Columns of V are the eigenvectors
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{multicols}{2}
+\begin{center}\textbf{Pros}\end{center}
+\begin{itemize}
+    \item Simple, easy to implement and parallelizable.
+    \item works well for large system, where other methods might be computationally intensive
+\end{itemize}
+\columnbreak
+\begin{center}\textbf{Cons}\end{center}
+\begin{itemize}
+    \item It may not always converge quickly. Convergence also depends upon the initial guess.
+    \item even for symmetric matrices it may take a large amount of iterations.
+\end{itemize}
+\end{multicols}
+
+\subsection{Divide and Conquer Algorithm}
+This is another algorithm that is commonly used to compute the eigenvalues of symmetric matrices. The time complexity of this algorithm is nearly $\mathcal{O}(n^3)$. It breaks down the matrix into smaller matrices, and then calculates their eigenvalues separately thus finding them efficiently. 
+
+\begin{algorithm}[H]
+    \setstretch{1.3}
+    \caption{Divide and Conquer Algorithm}
+    \begin{algorithmic}[1]
+        \Statex Given: Matrix $A$
+        \State DivideAndConquer$(A)$:
+        \State \hspace{1cm} If matrix $A$ is small enough:
+        \State \hspace{2cm} Return eigenvalues of $A$ by calculating them.
+        \State \hspace{1cm} Else:
+        \State \hspace{2cm} Divide $A$ into two smaller submatrices $A_1$ and $A_2$.
+        \State \hspace{2cm} eigenvalues1 = DivideAndConquer$(A_1)$ 
+        \State \hspace{2cm} eigenvalues2 = DivideAndConquer$(A_2)$ 
+        \State \hspace{2cm} Combine eigenvalues1 and eigenvalues2 to get the eigenvalues of $A$
+        \State \hspace{2cm} Return the combined eigenvalues
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{multicols}{2}
+\begin{center}\textbf{Pros}\end{center}
+\begin{itemize}
+    \item It is very fast for symmetric matrices than other methods.
+    \item It's recursive nature allows it to be parallelized.
+\end{itemize}
+\columnbreak
+\begin{center}\textbf{Cons}\end{center}
+\begin{itemize}
+    \item This approach is more complex to implement than simpler methods.
+    \item This approach may not effectively handle the sparse matrices.
+\end{itemize}
+\end{multicols}
+
+
+\subsection{Folded Spectrum Method}
+The Folded Spectrum method is also an iterative technique which helps in finding a particular eigenvalue close to a specific target value. Its complexity can range from $\mathcal{O}(n^2)$ to $\mathcal{O}(n^3)$ depending on the implementation.
+
+\begin{algorithm}[H]
+    \setstretch{1.3}
+    \caption{Jacobi Method}
+    \begin{algorithmic}[1]
+        \Statex Given: Real, symmetric matrix $A$, target value $\lambda_t$, tolerance $\epsilon$
+        \State Initialize a random vector $v$ such that $||v|| = 1$
+        \Repeat
+            \State Compute $w = (A - \lambda I) v$
+            \State Let $v_{\text{new}} = w/||w||$
+            \State If $|v_{\text{new}}-v| < \epsilon$, Converged, Break
+            \State Update $v\leftarrow v_{\text{new}}$
+        \Until{convergence}
+        \State Calculate associate eigenvalue as $\lambda = v^{\top} A v$
+        \Statex Output: converged eigenvector $v$ and eigenvalue $\lambda$ 
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{multicols}{2}
+\begin{center}\textbf{Pros}\end{center}
+\begin{itemize}
+    \item Can find eigenvalues close to a required target value.
+    \item Works well for large, sparse matrices.
+\end{itemize}
+\columnbreak
+\begin{center}\textbf{Cons}\end{center}
+\begin{itemize}
+    \item May take time to converge if it requires many iterations.
+    \item Convergence depends upon the choice of initial vector.
+\end{itemize}
+\end{multicols}
+
+% \subsection{QR Algorithm}
+% It is the most popular method for finding the eigenvalues of almost all type of general matrices. It works by iteratively transforming the matrix closer to a form where the eigenvalues can be easily calcualted.
+
+
+\section{QR Algorithm : A Suitable Choice}\cite{youtubeQR}
+QR Algorithm is the most popular method for finding the eigenvalues of almost all types of matrices. It works by repeatedly decomposing the given matrix into its QR factors (Q is an  orthogonal matrix, and R is an upper triangular matrix). It then updates the original matrix as RQ, slowly bringing it closer to a form where the eigenvalues can be easily found.
+\paragraph{} The algorithm finally converges to a diagonal-type matrix whose diagonal elements are the eigenvalues of the original matrix. This makes the QR algorithm a solid choice for eigenvalue calculation, especially when working with large and dense matrices.
+\paragraph{} Its applicability for all types of matrices makes it a perfect and suitable choice for my eigenvalue calculation software. Its algorithm is easy to understand and implement. The memory requirement of this algorithm are also not high as for every iteration, we only carry forward the updated matrix. which makes it quite efficient on memory as well.
+\paragraph{}The complexity of QR Algorithm with Householder Transformation is $\mathcal{O}(n^3)$. Generation of each householder reflection matrix $H$ takes operations proportional to $n^2$ and the process is repeated $n$ times for one time full decomposition of the matrix, thus making its complexity as $\mathcal{O}(n^3)$ per iteration.
+
+\begin{algorithm}[H]
+    \caption{QR Algorithm}
+    \begin{algorithmic}[1]
+        \Statex Given: Square Matrix $A$, tolerance $\epsilon$, max iterations $k$
+        \Statex
+        \State initialize $A_0 = A$
+        \For{$i=1$ to $k$}
+        \State Perform QR decomposition: $A_k = Q_k R_k$
+        \State Update $A_{k+1} = R_k Q_k$
+        \State If $|A_{k+1} - A_k| > \epsilon$, Break (Converged)
+        \EndFor
+        \Statex
+        \Statex Output: The diagonal elements of $A_{k+1}$ as the eigenvalues.
+    \end{algorithmic}
+\end{algorithm}
+
+\subsection{Decomposition Methods}
+For performing the decomposition, there are several methods. Some of them are:
+\subsubsection{Gram-Schmidt Process}
+It is a common algorithm used for orthogonalizing a set of vectors in an inner product space. In QR decomposition, it transforms the columns of matrix $A$ into an orthogonal set of vector (columns of $Q$), while maintaining a matrix $R$ such that $A = QR$.
+\paragraph{Steps:}
+\begin{enumerate}
+    \item For each column vector $a_i$ of $A$, subtract the projections of $a_i$ onto the previous orthogonal vectors to make it orthogonal to all the previous vectors.
+    \item Normalize each of the vector $a_i$ to get the corresponding column of the matrix $Q$.
+    \item The matrix $R$ contains the coefficients from the projections of the original vectors beofre normalization on the previously orthogonalised vectors.
+\end{enumerate}
+It is conceptually simple and easy to implement. It works well for small matrices, but it might be numerically unstable for larger matrices. This makes it a less preferred choice for large matrices.
+
+
+\subsubsection{Householder Reflections}
+This is a more numerically stable method for QR decomposition. It uses reflection matrices to zero out the subdiagonal elements of the given matrix leading to an upper triangular matrix $R$. These Reflections are simultaneously used to build the orthogonal matrix $Q$. Thus effectively decomposing the given matrix in the $QR$ form.
+\paragraph{Steps:}
+\begin{enumerate}
+    \item Initialize $R = A$, and $Q=I$
+    \item Calculate householder matrix $H$ for each column to zero out the elements below the diagonal
+    $$H = I - 2 \frac{v v^{\top}}{v^{\top}v}$$
+    \item Apply each reflection matrix $H$ to the matrix $R$ to ultimately converge to the upper triangular form.
+    \item Also apply each reflection $H$ to the matrix $Q$ to form the orthogonal matrix.
+\end{enumerate}
+It is numerically stable unlike the gram-schmidt process for large matrices. It can be easily applied for both dense and sparse matrices. A shortcoming of this method is that it is computationally more expensive than the gram-schmidt process. So it clearly becomes the best choice for my implementation of the QR Algorithm.
+
+
+\subsubsection{Givens Rotations}
+In this method, we zero out the elements below the diagonal by applying sequence of plane rotations, thus forming the upper triangular matrix $R$. Each rotation zeroes out one element in the matrix, and all those rotations are combined to from the orthogonal matrix $Q$.
+\paragraph{Steps:}
+\begin{enumerate}
+    \item At each step, choose two elements say $a_{ij}$ and $a_{kj}$ from the subdiagonal elements of the matrix.
+    \item Construct a rotation matrix $G$ which eliminates either of the two elements by rotating the two rows in the plane.
+    \item Apply the rotation matrix $G$ to $A$. 
+    \item Repeat this process till $A$ converges to an upper triangular form $R$.
+    \item The product of all the rotation matrices $G$ form the orthogonal matrix $Q$.
+    \end{enumerate}
+
+This method is numerically very stable. This method is only suitable for sparse matrices, as it only modifies two elements at a time. But for denser matrices, it may be computationally expensive as it would require a very large number of rotations.
+
+\subsection{Implementation}
+To implement my Eigenvalue calculating software, i am using C as my low level language for programming it. Here is an outline of my implementation.
+\begin{enumerate}
+    \item \textbf{Matrix Struct: } I have implemented a struct consisting of two elements. One stores the size of the matrix, and the other is a double pointer, which allows me to effectively store the matrix.
+    \item \textbf{Complex Data types:} I have used the \texttt{complex.h} library for handling complex entries. Every where i have used \texttt{long double} for precision and accuracy.
+    \item \textbf{Matrix Handling functions:} I have also created some matrix handling functions:
+    \begin{itemize}
+        \item \texttt{createMat(size)} : for creating a matrix and allocating memory to it.
+        \item \texttt{freeMat(matrix)} : to free the allocated memory to the matrix when not needed.
+        \item \texttt{scanMat(matrix, isComplex)} : to effectively take input from the user.
+        \item \texttt{printMat(matrix)} to print the matrix.
+    \end{itemize}
+    \item \textbf{Householder Method} I have implemented the householder method for decomposition of the matrix in a modular fashion. The functions are:
+    \begin{itemize}
+        \item \texttt{normCalculate()} : This function calculates and returns the norm of a complex vector.
+        \item \texttt{householderVector()} : This function takes in the columns of $A$ and outputs the corresponding householder vector.
+        \item \texttt{householderApplicatioon()} This is the main decomposing function which takes the householder vector and calculates the reflection matrix $H$ and updates the $Q$ and $R$ matrices.
+    \end{itemize}
+    \item \textbf{Wrapper function for QR Algorithm} : I have implemented the \texttt{qrAlgorithm()} function which takes in input as $A$, decomposes it into $QR$ form using the householder functions and updates $A$ as $A \leftarrow R Q$ while effectively managing the memory.
+    \item \textbf{Eigenvalue Printing}: I have also implemented the \texttt{printEigenValues()} function. It takes the modified matrix $A$ and prints the eigenvalues depending upon if there are complex eigenvalues or not.
+\end{enumerate}
+
+\subsection{Handling Complex Eigenvalues in the case of Real Entries:} \cite{libretexts}
+In the case of real matrices, eigenvalues re not always guaranteed to be real numbers. In such cases only printing the diagonal elements is incorrect. It is essential to handle such cases.
+\paragraph{} To address this issue is the specific reason for implementing the \texttt{printEigenvalues()} function. In such cases the QR algorithm transforms the original matrix into a Block Diagonalizable matrix. The \texttt{printEigenvalues()} function then goes through all such $2\times2$ blocks and prints their eigenvalues by calculating by direct method (which is quite simple for a $2\times2$ matrix. This way this function handles the case when there are real entries but complex eigenvalues.
+
+\section{Conclusion}
+In this assignment I explored various eigenvalue computation algorithms and selected the QR algorithm according to my needs to build my software. I implemented it in a modular fashion, with the numerically stable Householder Reflections for decomposition. Also, I added a specific function to handle the case when the eigenvalues were complex for real entries. 
+
+
+\bibliographystyle{plain}
+\bibliography{ref.bib}
+\end{document}
+
